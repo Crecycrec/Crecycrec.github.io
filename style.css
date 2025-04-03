@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Concert+One&display=swap');
 
 body{
-    background-image: url('images/spaceimg.jpg');
+    background-image: url('images/aaaaaaaw.png');
     background-size: cover;
     background-repeat: no-repeat
+
 }
 
 header{
@@ -15,6 +16,7 @@ header{
 header img{
     width: 20%;
     border-radius: 50%;
+    border: 2px solid #060124;
     animation:rotate 5s linear infinite;
     
 }
@@ -23,7 +25,7 @@ h1, h2{
     font-family: "Concert One", sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: white;
+    color: #060124;
 }
 
 h1{
@@ -34,14 +36,14 @@ h2{
     font-size: 2rem;
 }
 
-li, p, form{
+li, p, form, a{
     font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    color: white;
+    color: rgb(6, 1, 36);
 
-    font-size: .8rem;
+    
 }
 
 .section{
@@ -54,12 +56,51 @@ li, p, form{
     gap: 10%;
 }
 
+ul{
+    list-style-type: none;
+}
+li{
+    margin: 1rem;
+    font-size: 1rem;
+}
 .left a, .right a{
     text-decoration: none;
-    color: white;
 }
 
+.ranimg{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    bottom: 0;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+
+    overflow: hidden;
+}
+
+.ranimg img, .ranimg h2{
+    width: 20%;
+    border-radius: 10%;
+    
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
 @keyframes rotate {
     to { transform:rotate(360deg); }
   }
-  
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
