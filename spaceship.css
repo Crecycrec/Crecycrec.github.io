@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+.svg {
+    width: 100%;
+    height: auto;
+
+}
+
+.svg path {
+    fill: red;
+}
+
+.building-flames path{
+    fill: orange;
+}
+
+.building-body path{
+    fill: orange;
+}
+
+.ufo-building-float{
+    animation-name: ufo-building-float;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes ufo-building-float {
+    0% {transform: translateY(0)}
+    25% {transform: translateY(-15px)}
+    75% {transform: translateY(15px)}
+    100% {transform: translateY(0)}
+}
+
+/* Fade UFO Animation */
+
+.ufo-big {
+    animation: ufo-big 5s ease infinite;
+}
+
+.ufo-small {
+    animation: ufo-small 5s ease infinite;
+}
+
+@keyframes ufo-big {
+    0%        {opacity: 0}
+    15%, 70%  {opacity: 1}
+    85%, 100% {opacity: 0}
+}
+
+@keyframes ufo-small {
+    0%, 10%  {opacity: 0}
+    25%, 85% {opacity: 1}
+    100%     {opacity: 0}
+}
+
+.ufo-big-lights-light {
+    animation: ufo-big-lights 2.5s ease infinite;
+}
+
+.ufo-big-lights-light--2 {
+    animation-delay: .2s
+}
+.ufo-big-lights-light--3 {
+    animation-delay: .4s
+}
+.ufo-big-lights-light--4 {
+    animation-delay: .6s
+}
+.ufo-big-lights-light--5 {
+    animation-delay: .8s
+}
+
+@keyframes ufo-big-lights {
+    0%        {fill: red}
+    20%       {fill: #fbcb43}
+    40%, 100% {fill: red}
+}
+
+.building-flames path {
+    fill: #2e4dff;
+    animation: building-flames .15s ease infinite;
+    transform-origin: center top;
+}
+
+@keyframes building-flames {
+    0%   {transform: scale(1, 1) rotate(1deg)}
+    50%  {transform: scale(1, 1.1) rotate(0deg)}
+    100% {transform: scale(1, 1) rotate(-1deg)}
+}
