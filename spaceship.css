@@ -26,6 +26,14 @@ a:hover {
 
 .building-body path{
     fill: orange;
+    animation: build-body 2s ease infinite;
+}
+
+@keyframes build-body {
+    0%{fill: red}
+    20%{fill: #fbcb43}
+    40%{fill: rgb(18, 0, 100)}
+    100%{fill: red}
 }
 
 .ufo-building-float{
