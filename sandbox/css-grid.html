@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        section {
+            border: 4px solid red;
+            margin: 4px;
+            display: grid;
+            /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); */
+            grid-template-columns: repeat(5, 1fr);
+            grid-column-gap: 50px;
+            grid-row-gap: 30px;
+
+            .feature {
+                /* grid-column-start: 1;
+                grid-column-end: 4; */
+                grid-column: 1/4;
+            }
+        }
+        article{
+            border: 4px solid lightblue;
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <article>
+            <p>first box</p>
+        </article>
+        <article>
+            <p>second box</p>
+        </article>
+        <article>
+            <p>third box</p>
+        </article>
+        <article>
+            <p>four box</p>
+        </article>
+        <article>
+            <p>five box</p>
+        </article>
+
+    </section>
+</body>
+</html>
