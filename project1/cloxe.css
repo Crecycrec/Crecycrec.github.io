@@ -1,16 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Kosugi+Maru&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
-p {
+p, a {
     color: #2F0000;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+a {
+    font-size: 1.5rem;
+}
+
+.navright{
+    position: relative;
+    float: right;
+    top: 30px;
+    right: 2%;
+}
+
+.navright a{
+    margin: 20px;
+    padding: 10px;
+}
+
+/*Images in the navigations system.  */
+#logoimg{
+    position: relative;
+    top: 5px;
+    left: 2%;
+    width: 6%;
+    min-width: 70px;
+}
 #navborder {
     position: absolute;
-    left: 0;
-    top: 50px;
+    left: 0px;
+    top: 95px;
     width: 100%;
+}
+
+/* Body sections of the CSS */
+
+.headsummary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.headsummary p{
+    max-width: 70ch;
+    text-align: center;
+    font-size: 1.5rem;
+}
+#titlesize{
+    position: relative;
+    margin-top: 5%;
+    width: 30%;
+}
+
+#titlesize2{
+    position: relative;
+    left: -20px;
+    width: 30%;
+}
+
+
+/* Table of content stuff for the main pages yip yip */
+.toc-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tocelement{
+    position:absolute;
+    width: 60%;
+    margin-top: 7%;
+}
+
+#tochead{
+    position: relative;
+    margin-top: 7%;
+    width: 40%;
+}
+
+.toc-buttons{
+    position: relative;
+    margin: 5%;
+    display: flex;
+    flex-direction: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* flex: 1 1 auto; */
+    gap: 50px;
+}
+
+.overflowbutton{
+    width: 300px;
+    height: 280px;
+    transition: .2s;
+    background: url("assets/overflowinactive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.overflowbutton:hover{
+    background: url("assets/overflowactie.png"); 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.oceanbutton{
+    position: relative;
+    top: 30%;
+    width: 300px;
+    height: 280px;
+    transition: .2s;
+    background: url("assets/oceaninactive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.oceanbutton:hover{
+    background: url("assets/oceanactive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.shoalbutton{
+    width: 300px;
+    height: 280px;
+    transition: .2s;
+    background: url("assets/shoalinactive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.shoalbutton:hover{
+    background: url("assets/shoalactive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
