@@ -7,3 +7,10 @@
 p {
     color: #2F0000;
 }
+
+#navborder {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 100%;
+}
