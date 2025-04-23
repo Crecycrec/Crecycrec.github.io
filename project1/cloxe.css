@@ -23,26 +23,29 @@ footer{
     position: relative;
     display: flex;
     align-items: flex-end;
-    top: 200px;
-    left: 2%;
+    top: 240px;
+    left: -3%;
     gap: 2%;
+}
+footer p{
+    position: relative;
+    left: 5%;
 }
 
 #footerbg{
     position: absolute;
-    /* top: 1160px; */
-    bottom:-80%;
-    left: -5%;
-    width: 105%;
-    /* height:100%; */
+    width: 104%;
+    left: 0;
+    /* bottom: 210%; */
     z-index: -50;
 }
 
 #bgimg{
     position:absolute;
     left: 0;
-    top: 45%;
+    top: 40%;
     width: 100%;
+    height: 80%;
 }
 
 .navright{
