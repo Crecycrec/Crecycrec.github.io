@@ -23,23 +23,25 @@ footer{
     position: relative;
     display: flex;
     align-items: flex-end;
-    top: 260px;
+    top: 200px;
     left: 2%;
     gap: 2%;
 }
 
 #footerbg{
     position: absolute;
-    top: 150%;
+    /* top: 1160px; */
+    bottom:-80%;
     left: -5%;
     width: 105%;
+    /* height:100%; */
     z-index: -50;
 }
 
 #bgimg{
     position:absolute;
     left: 0;
-    top: 55%;
+    top: 45%;
     width: 100%;
 }
 
