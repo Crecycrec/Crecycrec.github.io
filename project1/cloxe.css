@@ -15,6 +15,34 @@ a {
     font-size: 1.5rem;
 }
 
+body{
+    overflow-x:hidden ;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    top: 260px;
+    left: 2%;
+    gap: 2%;
+}
+
+#footerbg{
+    position: absolute;
+    top: 150%;
+    left: -5%;
+    width: 105%;
+    z-index: -50;
+}
+
+#bgimg{
+    position:absolute;
+    left: 0;
+    top: 55%;
+    width: 100%;
+}
+
 .navright{
     position: relative;
     float: right;
@@ -54,7 +82,8 @@ a {
 .headsummary p{
     max-width: 70ch;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 0.75rem + 0.625vw, 1.5rem);
+    /* font-size: 1.5rem; */
 }
 #titlesize{
     position: relative;
@@ -91,11 +120,11 @@ a {
 .toc-buttons{
     position: relative;
     margin: 5%;
-    display: flex;
-    flex-direction: grid;
+    display: grid;
+    /* flex-direction: grid; */
     grid-template-columns: repeat(3, 1fr);
     /* flex: 1 1 auto; */
-    gap: 50px;
+    gap: 30px;
 }
 
 .overflowbutton{
@@ -141,6 +170,45 @@ a {
 
 .shoalbutton:hover{
     background: url("assets/shoalactive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.symbiosisbutton{
+    width: 300px;
+    height: 280px;
+    transition: .2s;
+    background: url("assets/symbiosisinactive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.symbiosisbutton:hover{
+    background: url("assets/symbiosisactive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hookimg{
+    position: relative;
+    left: 40%;
+}
+
+.hookimg img{
+    height: 300px;
+}
+
+.anglerbutton{
+    width: 300px;
+    height: 280px;
+    transition: .2s;
+    background: url("assets/anglerinactive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.anglerbutton:hover{
+    background: url("assets/angleractive.png");
     background-size: contain;
     background-repeat: no-repeat;
 }
