@@ -73,6 +73,29 @@ footer p{
     scale: 1.05;
 }
 
+#tumblrimg2{
+    position: relative;
+    top: -25px;
+    left: 15px;
+    width: 60px;
+    transition: 0.2s;
+}
+
+#tumblrimg2:hover{
+    scale:1.05;
+}
+
+#bskyimg2{
+    position: relative;
+    top: -25px;
+    width: 60px;
+    transition: .2s;
+}
+
+#bskyimg2:hover{
+    scale:1.05;
+}
+
 #bgimg{
     position:absolute;
     left: 0;
@@ -92,6 +115,11 @@ footer p{
 .navright a{
     margin: 20px;
     padding: 10px;
+    transition: .2s;
+}
+
+.navright a:hover{
+    text-decoration: underline;
 }
 
 /*Images in the navigations system.  */
