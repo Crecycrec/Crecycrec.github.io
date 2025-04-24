@@ -11,15 +11,23 @@ p, a {
     font-style: normal;
 }
 
+h3{
+    color: #2F0000;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
 a {
     font-size: 1.5rem;
+    text-decoration: none;
 }
 
 body{
     overflow-x:hidden ;
 }
 
-footer{
+#home-foot{
     position: relative;
     width: 100%;
     display: flex;
@@ -47,9 +55,29 @@ footer p{
     left: 72%;
 }
 
+#about-foot{
+    position: absolute;
+    bottom:-4%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    left: -3%;
+    gap: 2%;
+}
+
 #instimg{
     position: relative;
     width: 20%;
+}
+
+#instimg2{
+    position: relative;
+    width: 100px;
+    transition: .2s;
+}
+
+#instimg2:hover{
+    scale: 1.05;
 }
 
 #bgimg{
@@ -228,4 +256,34 @@ footer p{
     background: url("assets/angleractive.png");
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+
+/* About css here just for organizations purposes */
+
+.about-container{
+    position: relative;
+    top: 10px;
+    padding: 5%;
+    left: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+#coverimg{
+    width: 35%;
+    border: 3px solid #2F0000;
+}
+
+#aboutimg{
+    width: 30%;
+}
+
+.about-container p {
+    font-size: 1.225rem;
+    min-width: 80ch;
+    max-width: 90ch;
 }
