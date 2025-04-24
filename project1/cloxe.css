@@ -85,6 +85,7 @@ footer p{
     left: 0;
     top: 40%;
     width: 100%;
+    z-index: -60;
     /* height: 90%; */
 }
 
@@ -123,6 +124,12 @@ footer p{
     justify-content: center;
     align-items: center;
 }
+.headsummary p{
+    -webkit-text-stroke: 8px white;
+}
+.fix-stroke {
+    paint-order: stroke fill;
+ }
 
 .headsummary p{
     max-width: 70ch;
