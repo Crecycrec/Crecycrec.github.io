@@ -31,6 +31,7 @@ body{
 }
 footer p{
     position: relative;
+    float:left;
     left: 5%;
 }
 
@@ -38,23 +39,22 @@ footer p{
     position: absolute;
     width: 106%;
     left: -2%;
-    /* bottom: 210%; */
     z-index: -50;
 }
 
 .foot-right{
     position:relative;
     float: right;
-    left: 70%;
+    right: -65%;
+    overflow: auto;
 }
 
 #about-foot{
     position: absolute;
-    bottom:-4%;
     width: 100%;
-    display: flex;
-    align-items: flex-end;
     left: -3%;
+    display: flex;
+    flex-wrap: wrap;
     gap: 2%;
 }
 
