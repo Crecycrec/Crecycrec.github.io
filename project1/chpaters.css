@@ -14,6 +14,21 @@ body{
     width: 6%;
     min-width: 70px;
 }
+
+#words{
+    position: absolute;
+    width: 40%;
+    transition: 0.5s;
+    opacity: 100%
+}
+
+.txt1{
+    position: relative;
+    top: 0;
+    right: 200px;
+    top: 50px;
+    opacity: 100%;
+}
 .carousel-cont{
     position: relative;
     top: -60px;
@@ -33,6 +48,7 @@ body{
     object-fit: cover;
     transition: opacity 0.5s ease-in-out;
 }
+
 #carousel2{
     position: relative;
     left: 9%;
