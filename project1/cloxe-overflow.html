@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CLOXE: Overflow</title>
 </head>
-<body>
-    <h1> OVerflow</h1>
+<body class="chapt1">
+    <!-- Overall container for the images itself  -->
+     <div class="carousel-cont" id="carouselCont">
+        <!-- Left Arrow button to go to prev pg -->
+        <button class="arrow arrow-left" onClick="prevImage()">❮</button>
+
+        <!-- Carousell of all the spreads that is the base images. -->
+        <img id="carousel" class="" src="" alt="Carousel Image">
+
+        <!-- Right arrow button to go to the next two pages -->
+        <button class="arrow arrow-right" onclick="nextImage()">❯</button>
+     </div>
+
+     <!-- img tag for all the word images that will be used for the pages. -->
+     <img id="words" src="" class="" alt="">
+     <script>
+        import jsonData from './chapt1.json' with {type: 'json'};
+        console.log(jasonData);
+     </script>
 </body>
 </html>
