@@ -107,9 +107,9 @@ function showImage(index){
         words3.style.opacity = 0;
         words4.style.opacity = 0;
         unfade(words);
-        setTimeout(() => {unfade(words2);}, 500);
-        setTimeout(() => {unfade(words3);}, 1000);
-        setTimeout(() => {unfade(words4);}, 1500);
+        setTimeout(() => {unfade(words2);}, 300);
+        setTimeout(() => {unfade(words3);}, 600);
+        setTimeout(() => {unfade(words4);}, 900);
         // unfade(words4);
         words.className= imageData[index].className;
         words2.className= imageData[index].className;
@@ -121,8 +121,11 @@ function showImage(index){
         words4.src = `overflow/Overflowtxt-${imageTxt[5].id}.png`;
 
         // Right page
-        unfade(words5);
-        unfade(words6);
+        words5.style.opacity = 0;
+        words6.style.opacity = 0;
+        setTimeout(() => {unfade(words5);}, 1200);
+        setTimeout(() => {unfade(words6);}, 1500);
+
         words5.className= imageTxt[6].className;
         words6.className= imageTxt[7].className;
         words5.src = `overflow/Overflowtxt-${imageTxt[6].id}.png`;

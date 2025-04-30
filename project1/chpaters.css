@@ -19,7 +19,7 @@ body{
     position: absolute;
     width: 38%;
     object-fit: cover;
-    opacity: 0%;
+    opacity: 100%;
     /* transition: opacity 0.5s; */
 }
 
@@ -27,6 +27,7 @@ body{
     position: absolute;
     top: 10%;
     right: 13%;
+    opacity: 100%;
 }
 
 .txtr{
