@@ -18,23 +18,47 @@ body{
 #words, #words2, #words3, #words4, #words5, #words6, #words7, #words8, #words9{
     position: absolute;
     width: 38%;
+    object-fit: cover;
     /* opacity: 100%; */
-    transition: opacity 0.5s;
+    /* transition: opacity 0.5s; */
+}
+
+.ovTitle{
+    position: absolute;
+    top: 10%;
+    right: 13%;
 }
 
 .txtr{
     position: absolute;
-    right: 200px;
-    top: 50px;
-    opacity: 100%;
+    right: 12%;
+    top: 3%;
+    /* opacity: 100%; */
+}
+
+.pg4R{
+    position: absolute;
+    right: 15%;
+    top: 3%; 
+}
+
+.pg4R2{
+    position: absolute;
+    right: 11.5%;
+    top: 4%; 
+}
+.pg4R3{
+    position: absolute;
+    right: 11.5%;
+    top: 4%; 
 }
 
 .txtl{
     position: absolute;
-    top: 60px;
-    left: 215px;
+    top: 7%;
+    left: 12.5%;
     /* right: 200px; */
-    opacity: 100%;
+    /* opacity: 100%; */
 }
 
 .carousel-cont{
@@ -59,7 +83,7 @@ body{
 
 #carousel2{
     position: relative;
-    left: 9%;
+    left: 9.4%;
     width: 40%;
     /* height: 150%; */
     border: 2px solid #2F0000;

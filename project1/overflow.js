@@ -3,7 +3,7 @@ const imageData =[
     {id: "1", className: "txtl", alt: ""},
     {id: "2", className: "txtl", alt: ""},
     {id: "3", className: "txtr", alt: ""},
-    {id: "4", className: "txtr", alt: ""},
+    {id: "4", className: "", alt: ""},
     {id: "5", className: "", alt: ""},
     {id: "6", className: "", alt: ""},
     {id: "7", className: "", alt: ""},
@@ -19,13 +19,13 @@ const imageData =[
 
 const imageTxt =[
     {id: "0", className: "", alt: ""},
-    {id: "1", className: "", alt: ""},
+    {id: "1", className: "ovTitle", alt: ""},
     {id: "2", className: "", alt: ""},
     {id: "3", className: "", alt: ""},
     {id: "4", className: "", alt: ""},
     {id: "5", className: "", alt: ""},
-    {id: "6", className: "", alt: ""},
-    {id: "7", className: "", alt: ""},
+    {id: "6", className: "pg4R", alt: ""},
+    {id: "7", className: "pg4R2", alt: ""},
     {id: "8", className: "", alt: ""},
     {id: "9", className: "", alt: ""},
     {id: "10", className: "", alt: ""},
@@ -51,6 +51,19 @@ const words9 = document.getElementById("words9");
 var arrowL = document.getElementById("al");
 let atoplayInterval = null;
 let isPlaying = false;
+
+function unfade(element) {
+    var op = 0.1;  // initial opacity
+    element.style.display = 'block';
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
+        op += op * 0.1;
+    }, 20);
+}
 
 //Functions that shows the new image in the carousel.
 function showImage(index){
@@ -85,9 +98,15 @@ function showImage(index){
     }
 
     if(currentIndex + 1 == 1){
-        words.className= imageData[index].className;
+        unfade(words);
+        words.className= imageTxt[1].className;
         words.src = `overflow/Overflowtxt-${imageTxt[1].id}.png`;
     } else if(currentIndex == 2){
+        // LEft PAge
+        unfade(words);
+        unfade(words2);
+        unfade(words3);
+        unfade(words4);
         words.className= imageData[index].className;
         words2.className= imageData[index].className;
         words3.className= imageData[index].className;
@@ -96,10 +115,18 @@ function showImage(index){
         words2.src = `overflow/Overflowtxt-${imageTxt[3].id}.png`;
         words3.src = `overflow/Overflowtxt-${imageTxt[4].id}.png`;
         words4.src = `overflow/Overflowtxt-${imageTxt[5].id}.png`;
+
+        // Right page
+        unfade(words5);
+        unfade(words6);
+        words5.className= imageTxt[6].className;
+        words6.className= imageTxt[7].className;
+        words5.src = `overflow/Overflowtxt-${imageTxt[6].id}.png`;
+        words6.src = `overflow/Overflowtxt-${imageTxt[7].id}.png`;
     } else{
-        // words.setAttribute('src', '');
-        // words2.setAttribute('src', '');
-        // words2.setAttribute('src', '');
+        words.setAttribute('src', '');
+        words2.setAttribute('src', '');
+        words2.setAttribute('src', '');
     }
 }
 
