@@ -102,11 +102,15 @@ function showImage(index){
         words.className= imageTxt[1].className;
         words.src = `overflow/Overflowtxt-${imageTxt[1].id}.png`;
     } else if(currentIndex == 2){
-        // LEft PAge
+        // LEft PAgew
+        words2.style.opacity = 0;
+        words3.style.opacity = 0;
+        words4.style.opacity = 0;
         unfade(words);
-        unfade(words2);
-        unfade(words3);
-        unfade(words4);
+        setTimeout(() => {unfade(words2);}, 500);
+        setTimeout(() => {unfade(words3);}, 1000);
+        setTimeout(() => {unfade(words4);}, 1500);
+        // unfade(words4);
         words.className= imageData[index].className;
         words2.className= imageData[index].className;
         words3.className= imageData[index].className;
