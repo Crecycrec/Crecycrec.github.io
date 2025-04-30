@@ -15,20 +15,28 @@ body{
     min-width: 70px;
 }
 
-#words{
+#words, #words2, #words3, #words4, #words5, #words6, #words7, #words8, #words9{
     position: absolute;
-    width: 40%;
-    transition: 0.5s;
-    opacity: 100%
+    width: 38%;
+    /* opacity: 100%; */
+    transition: opacity 0.5s;
 }
 
-.txt1{
-    position: relative;
-    top: 0;
+.txtr{
+    position: absolute;
     right: 200px;
     top: 50px;
     opacity: 100%;
 }
+
+.txtl{
+    position: absolute;
+    top: 60px;
+    left: 215px;
+    /* right: 200px; */
+    opacity: 100%;
+}
+
 .carousel-cont{
     position: relative;
     top: -60px;
