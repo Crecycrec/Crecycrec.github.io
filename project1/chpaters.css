@@ -20,6 +20,7 @@ body{
     width: 38%;
     object-fit: cover;
     opacity: 100%;
+    z-index: 200;
     /* transition: opacity 0.5s; */
 }
 
@@ -54,9 +55,60 @@ body{
     top: 4%; 
 }
 
+.pg6R1{
+    position: absolute;
+    right: 10.5%;
+    top: 13%; 
+}
+.pg6R2{
+    position: absolute;
+    right: 13%;
+    top: 9%; 
+}
+.pg6R3{
+    position: absolute;
+    right: 12.5%;
+    top: 8%; 
+}
+.pg6R4{
+    position: absolute;
+    right: 12.5%;
+    top: 8%; 
+}
+
 .txtl{
     position: absolute;
     top: 7%;
+    left: 12.5%;
+    /* right: 200px; */
+    /* opacity: 100%; */
+}
+.pg5L1{
+    position: absolute;
+    top: 8%;
+    left: 12.5%;
+    /* right: 200px; */
+    opacity: 100%;
+}
+
+.pg5L2{
+    position: absolute;
+    top: 8%;
+    left: 12.5%;
+    /* right: 200px; */
+    /* opacity: 100%; */
+}
+.pg5L3{
+    position: absolute;
+    top: 8%;
+    left: 12.5%;
+    /* right: 200px; */
+    /* opacity: 100%; */
+}
+
+.pg7L1{
+    position: absolute;
+    top: 8%;
     left: 12.5%;
     /* right: 200px; */
     /* opacity: 100%; */

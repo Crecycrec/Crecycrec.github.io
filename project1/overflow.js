@@ -26,14 +26,30 @@ const imageTxt =[
     {id: "5", className: "", alt: ""},
     {id: "6", className: "pg4R", alt: ""},
     {id: "7", className: "pg4R2", alt: ""},
-    {id: "8", className: "", alt: ""},
-    {id: "9", className: "", alt: ""},
-    {id: "10", className: "", alt: ""},
-    {id: "11", className: "", alt: ""},
-    {id: "12", className: "", alt: ""},
-    {id: "13", className: "", alt: ""},
-    {id: "14", className: "", alt: ""},
-    {id: "15", className: "", alt: ""}
+    {id: "8", className: "pg5L1", alt: ""},
+    {id: "9", className: "pg5L2", alt: ""},
+    {id: "10", className: "pg5L3", alt: ""},
+    {id: "11", className: "pg6R1", alt: ""},
+    {id: "12", className: "pg6R2", alt: ""},
+    {id: "13", className: "pg6R3", alt: ""},
+    {id: "14", className: "pg6R4", alt: ""},
+    {id: "15", className: "pg7L1", alt: ""},
+    {id: "16", className: "", alt: ""},
+    {id: "17", className: "", alt: ""},
+    {id: "18", className: "", alt: ""},
+    {id: "19", className: "", alt: ""},
+    {id: "20", className: "", alt: ""},
+    {id: "21", className: "", alt: ""},
+    {id: "22", className: "", alt: ""},
+    {id: "23", className: "", alt: ""},
+    {id: "24", className: "", alt: ""},
+    {id: "25", className: "", alt: ""},
+    {id: "26", className: "", alt: ""},
+    {id: "27", className: "", alt: ""},
+    {id: "28", className: "", alt: ""},
+    {id: "29", className: "", alt: ""},
+    {id: "30", className: "", alt: ""},
+    {id: "31", className: "", alt: ""}
 ];
 
 let currentIndex = 0;
@@ -130,10 +146,52 @@ function showImage(index){
         words6.className= imageTxt[7].className;
         words5.src = `overflow/Overflowtxt-${imageTxt[6].id}.png`;
         words6.src = `overflow/Overflowtxt-${imageTxt[7].id}.png`;
-    } else{
-        words.setAttribute('src', '');
-        words2.setAttribute('src', '');
-        words2.setAttribute('src', '');
+    } else if(currentIndex == 4){
+
+        //Left Page
+        words2.style.opacity = 0;
+        words3.style.opacity = 0;
+
+        unfade(words)
+        setTimeout(() => {unfade(words2);}, 300);
+        setTimeout(() => {unfade(words3);}, 600);
+
+        words.className = imageTxt[8].className;
+        words2.className = imageTxt[9].className;
+        words3.className = imageTxt[10].className;
+        words.src = `overflow/Overflowtxt-${imageTxt[8].id}.png`;
+        words2.src = `overflow/Overflowtxt-${imageTxt[9].id}.png`;
+        words3.src = `overflow/Overflowtxt-${imageTxt[10].id}.png`;
+
+        //Right Page
+        words4.style.opacity = 0;
+        words5.style.opacity = 0;
+        words6.style.opacity = 0;
+        words7.style.opacity = 0;
+
+        setTimeout(() => {unfade(words4);}, 1200);
+        setTimeout(() => {unfade(words5);}, 1500);
+        setTimeout(() => {unfade(words6);}, 1800);
+        setTimeout(() => {unfade(words7);}, 2100);
+        words4.className = imageTxt[11].className;
+        words5.className = imageTxt[12].className;
+        words6.className = imageTxt[13].className;
+        words7.className = imageTxt[14].className;
+        words4.src = `overflow/Overflowtxt-${imageTxt[11].id}.png`;
+        words5.src = `overflow/Overflowtxt-${imageTxt[12].id}.png`;
+        words6.src = `overflow/Overflowtxt-${imageTxt[13].id}.png`;
+        words7.src = `overflow/Overflowtxt-${imageTxt[14].id}.png`;
+    }else if(currentIndex == 6){
+
+        //Left Page
+        words2.style.opacity = 0;
+        words3.style.opacity = 0;
+
+        unfade(words);
+        setTimeout(() => {unfade(words2);}, 300);
+
+        words.className = imageTxt[15].className;
+        words.src = `overflow/Overflowtxt-${imageTxt[15].id}.png`;
     }
 }
 
