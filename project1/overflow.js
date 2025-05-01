@@ -91,6 +91,7 @@ function showImage(index){
     //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
     resetSrcOp();
 
+    //just fades in all the text everytime even if it is empty.
     fadeInAnim();
 
     switch(currentIndex){
@@ -254,8 +255,6 @@ function fadeInAnim(){
     setTimeout(() => {unfade(words8);}, 2100);
     setTimeout(() => {unfade(words9);}, 2400);
 }
-
-
 
 showImage(currentIndex);
 showImage2(currentIndex);
