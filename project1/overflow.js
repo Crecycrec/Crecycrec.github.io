@@ -66,8 +66,6 @@ const words8 = document.getElementById("words8");
 const words9 = document.getElementById("words9");
 var arrowL = document.getElementById("al");
 var arrowR = document.getElementById("ar");
-let atoplayInterval = null;
-let isPlaying = false;
 
 function unfade(element) {
     var op = 0.1;  // initial opacity
