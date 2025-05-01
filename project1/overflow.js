@@ -88,8 +88,8 @@ function showImage(index){
     carousel.src = `overflow/Overflow-${imageData[index].id}.png`;
     carousel.alt = imageData[index].alt;
 
-    //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
-    resetSrcOp();
+    // //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
+    // resetSrcOp();
 
     //just fades in all the text everytime even if it is empty.
     fadeInAnim();
@@ -211,11 +211,15 @@ function showImage2(index){
 }
 
 function nextImage(){
+    //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
+    resetSrcOp();
     currentIndex= (currentIndex+2) % imageData.length;
     showImage(currentIndex);
     showImage2(currentIndex);
 }
 function prevImage(){
+    //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
+    resetSrcOp();
     currentIndex=(currentIndex-2+imageData.length) % imageData.length;
     showImage(currentIndex);
     showImage2(currentIndex);
