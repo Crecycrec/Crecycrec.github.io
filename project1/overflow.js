@@ -93,114 +93,112 @@ function showImage(index){
 
     fadeInAnim();
 
+    switch(currentIndex){
+        case 0:
+            arrowL.setAttribute('disabled', true);
+            arrowL.style.opacity = 0;
+            words.className= imageTxt[1].className;
+            words.src = `overflow/Overflowtxt-${imageTxt[1].id}.png`;
+            break;
+        case 2:
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            words.className= imageData[index].className;
+            words2.className= imageData[index].className;
+            words3.className= imageData[index].className;
+            words4.className= imageData[index].className;
+            words.src = `overflow/Overflowtxt-${imageTxt[2].id}.png`;
+            words2.src = `overflow/Overflowtxt-${imageTxt[3].id}.png`;
+            words3.src = `overflow/Overflowtxt-${imageTxt[4].id}.png`;
+            words4.src = `overflow/Overflowtxt-${imageTxt[5].id}.png`;
 
-    //diables the left arrow  if it is the beginning of the story.
-    if(currentIndex == 0){
-        arrowL.setAttribute('disabled', true);
-        arrowL.style.opacity = 0;
-    } else if(currentIndex > 0){
-        arrowL.removeAttribute('disabled');
-        arrowL.style.opacity = 1;
-    }
+            // Right page
+            words5.className= imageTxt[6].className;
+            words6.className= imageTxt[7].className;
+            words5.src = `overflow/Overflowtxt-${imageTxt[6].id}.png`;
+            words6.src = `overflow/Overflowtxt-${imageTxt[7].id}.png`;
+            break;
+        case 4:
+            //Left Page
+            words.className = imageTxt[8].className;
+            words2.className = imageTxt[9].className;
+            words3.className = imageTxt[10].className;
+            words.src = `overflow/Overflowtxt-${imageTxt[8].id}.png`;
+            words2.src = `overflow/Overflowtxt-${imageTxt[9].id}.png`;
+            words3.src = `overflow/Overflowtxt-${imageTxt[10].id}.png`;
 
-    if(currentIndex == 14){
-        arrowR.onclick = function(){
-            window.open('overflow-end.html', '_parent');
-        }
-    } else {
-        arrowR.onclick = function(){nextImage()};
-    }
+            //Right Page
+            words4.className = imageTxt[11].className;
+            words5.className = imageTxt[12].className;
+            words6.className = imageTxt[13].className;
+            words7.className = imageTxt[14].className;
+            words4.src = `overflow/Overflowtxt-${imageTxt[11].id}.png`;
+            words5.src = `overflow/Overflowtxt-${imageTxt[12].id}.png`;
+            words6.src = `overflow/Overflowtxt-${imageTxt[13].id}.png`;
+            words7.src = `overflow/Overflowtxt-${imageTxt[14].id}.png`;
+            break;
+        case 6:
+            //Left Page
+            words.className = imageTxt[15].className;
+            words2.className = imageTxt[16].className;
+            words3.className = imageTxt[17].className;
+            words.src = `overflow/Overflowtxt-${imageTxt[15].id}.png`;
+            words2.src = `overflow/Overflowtxt-${imageTxt[16].id}.png`;
+            words3.src = `overflow/Overflowtxt-${imageTxt[17].id}.png`;
+            break;
+        case 8:
+            //Left PAge
+            words.className = imageTxt[18].className;
+            words2.className = imageTxt[19].className;
+            words3.className = imageTxt[20].className;
+            words.src = `overflow/Overflowtxt-${imageTxt[18].id}.png`;
+            words2.src = `overflow/Overflowtxt-${imageTxt[19].id}.png`;
+            words3.src = `overflow/Overflowtxt-${imageTxt[20].id}.png`;
 
+            //Right page
+            words4.className = imageTxt[21].className;
+            words4.src = `overflow/Overflowtxt-${imageTxt[21].id}.png`;
+            break;
+        case 10:
+            words.className = imageTxt[22].className;
+            words.src = `overflow/Overflowtxt-${imageTxt[22].id}.png`;
+            break;
+        case 12:
+            // Left Page
+            words.className = imageTxt[23].className;
+            words2.className = imageTxt[24].className;
+            words3.className = imageTxt[25].className;
+            words4.className = imageTxt[26].className;
+            words5.className = imageTxt[27].className;
+            words.src = `overflow/Overflowtxt-${imageTxt[23].id}.png`;
+            words2.src = `overflow/Overflowtxt-${imageTxt[24].id}.png`;
+            words3.src = `overflow/Overflowtxt-${imageTxt[25].id}.png`;
+            words4.src = `overflow/Overflowtxt-${imageTxt[26].id}.png`;
+            words5.src = `overflow/Overflowtxt-${imageTxt[27].id}.png`;
 
-    if(currentIndex + 1 == 1){
-        // unfade(words);
-        words.className= imageTxt[1].className;
-        words.src = `overflow/Overflowtxt-${imageTxt[1].id}.png`;
-    } else if(currentIndex == 2){
-        // LEft PAgew
-        words.className= imageData[index].className;
-        words2.className= imageData[index].className;
-        words3.className= imageData[index].className;
-        words4.className= imageData[index].className;
-        words.src = `overflow/Overflowtxt-${imageTxt[2].id}.png`;
-        words2.src = `overflow/Overflowtxt-${imageTxt[3].id}.png`;
-        words3.src = `overflow/Overflowtxt-${imageTxt[4].id}.png`;
-        words4.src = `overflow/Overflowtxt-${imageTxt[5].id}.png`;
+            //Right Page
+            words6.className = imageTxt[28].className;
+            words7.className = imageTxt[29].className;
+            words6.src = `overflow/Overflowtxt-${imageTxt[28].id}.png`;
+            words7.src = `overflow/Overflowtxt-${imageTxt[29].id}.png`;
+            arrowR.onclick = function(){nextImage()};
+            break;
+        case 14:
+            words.className = imageTxt[30].className;
+            words2.className = imageTxt[31].className;
+            words.src = `overflow/Overflowtxt-${imageTxt[30].id}.png`;
+            words2.src = `overflow/Overflowtxt-${imageTxt[31].id}.png`;
 
-        // Right page
-        words5.className= imageTxt[6].className;
-        words6.className= imageTxt[7].className;
-        words5.src = `overflow/Overflowtxt-${imageTxt[6].id}.png`;
-        words6.src = `overflow/Overflowtxt-${imageTxt[7].id}.png`;
-    } else if(currentIndex == 4){
-
-        //Left Page
-        words.className = imageTxt[8].className;
-        words2.className = imageTxt[9].className;
-        words3.className = imageTxt[10].className;
-        words.src = `overflow/Overflowtxt-${imageTxt[8].id}.png`;
-        words2.src = `overflow/Overflowtxt-${imageTxt[9].id}.png`;
-        words3.src = `overflow/Overflowtxt-${imageTxt[10].id}.png`;
-
-        //Right Page
-        words4.className = imageTxt[11].className;
-        words5.className = imageTxt[12].className;
-        words6.className = imageTxt[13].className;
-        words7.className = imageTxt[14].className;
-        words4.src = `overflow/Overflowtxt-${imageTxt[11].id}.png`;
-        words5.src = `overflow/Overflowtxt-${imageTxt[12].id}.png`;
-        words6.src = `overflow/Overflowtxt-${imageTxt[13].id}.png`;
-        words7.src = `overflow/Overflowtxt-${imageTxt[14].id}.png`;
-    }else if(currentIndex == 6){
-
-        //Left Page
-        words.className = imageTxt[15].className;
-        words2.className = imageTxt[16].className;
-        words3.className = imageTxt[17].className;
-        words.src = `overflow/Overflowtxt-${imageTxt[15].id}.png`;
-        words2.src = `overflow/Overflowtxt-${imageTxt[16].id}.png`;
-        words3.src = `overflow/Overflowtxt-${imageTxt[17].id}.png`;
-    } else if(currentIndex == 8){
-
-        //Left PAge
-        words.className = imageTxt[18].className;
-        words2.className = imageTxt[19].className;
-        words3.className = imageTxt[20].className;
-        words.src = `overflow/Overflowtxt-${imageTxt[18].id}.png`;
-        words2.src = `overflow/Overflowtxt-${imageTxt[19].id}.png`;
-        words3.src = `overflow/Overflowtxt-${imageTxt[20].id}.png`;
-
-        //Right page
-        words4.className = imageTxt[21].className;
-        words4.src = `overflow/Overflowtxt-${imageTxt[21].id}.png`;
-    } else if(currentIndex == 10){
-        words.className = imageTxt[22].className;
-        words.src = `overflow/Overflowtxt-${imageTxt[22].id}.png`;
-    } else if(currentIndex == 12){
-
-        // Left Page
-        words.className = imageTxt[23].className;
-        words2.className = imageTxt[24].className;
-        words3.className = imageTxt[25].className;
-        words4.className = imageTxt[26].className;
-        words5.className = imageTxt[27].className;
-        words.src = `overflow/Overflowtxt-${imageTxt[23].id}.png`;
-        words2.src = `overflow/Overflowtxt-${imageTxt[24].id}.png`;
-        words3.src = `overflow/Overflowtxt-${imageTxt[25].id}.png`;
-        words4.src = `overflow/Overflowtxt-${imageTxt[26].id}.png`;
-        words5.src = `overflow/Overflowtxt-${imageTxt[27].id}.png`;
-
-        //Right Page
-        words6.className = imageTxt[28].className;
-        words7.className = imageTxt[29].className;
-        words6.src = `overflow/Overflowtxt-${imageTxt[28].id}.png`;
-        words7.src = `overflow/Overflowtxt-${imageTxt[29].id}.png`;
-    } else if(currentIndex == 14){
-        words.className = imageTxt[30].className;
-        words2.className = imageTxt[31].className;
-        words.src = `overflow/Overflowtxt-${imageTxt[30].id}.png`;
-        words2.src = `overflow/Overflowtxt-${imageTxt[31].id}.png`;
-
+            arrowR.onclick = function(){
+                window.open('overflow-end.html', '_parent');
+            }
+            break;
+        default:
+            //I don't think I need this but I have it hear out of my own paranoia
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
+            // break;
     }
 }
 
