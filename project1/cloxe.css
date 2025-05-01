@@ -4,17 +4,20 @@
     box-sizing: border-box;
 }
 
-p, a {
+p, a, h2 {
     color: #2F0000;
     font-family: "Kosugi Maru", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
+
 a {
     font-size: 1.5rem;
     text-decoration: none;
 }
+
+
 
 body{
     overflow-x:hidden ;
@@ -65,8 +68,9 @@ footer p{
 
 #instimg2{
     position: relative;
-    width: 100px;
+    width: 60px;
     transition: .2s;
+    top: -12px;
 }
 
 #instimg2:hover{
@@ -84,7 +88,7 @@ footer p{
     position: relative;
     top: -25px;
     left: 15px;
-    width: 60px;
+    width: 40px;
     transition: 0.2s;
 }
 
@@ -101,7 +105,7 @@ footer p{
 #bskyimg2{
     position: relative;
     top: -25px;
-    width: 60px;
+    width: 40px;
     transition: .2s;
 }
 
@@ -143,6 +147,17 @@ footer p{
     width: 6%;
     min-width: 70px;
 }
+#logoimg2{
+    position: absolute;
+    /* bottom: -11%; */
+    left: 44.5%;
+    width: 10%;
+    transition: 0.2s;
+    /* min-width: 70px; */
+}
+#logoimg2:hover{
+    scale: 1.05;
+}
 #navborder {
     position: absolute;
     left: 0px;
@@ -182,6 +197,9 @@ footer p{
     left: -20px;
     width: 30%;
 }
+#social-title{
+    width: 40%;
+}
 
 
 /* Table of content stuff for the main pages yip yip */
@@ -212,6 +230,16 @@ footer p{
     /* flex: 1 1 auto; */
     gap: 30px;
 }
+.toc-buttons2{
+    position: relative;
+    /* margin: 5%; */
+    display: grid;
+    /* flex-direction: grid; */
+    grid-template-columns: repeat(4, 1fr);
+    /* flex: 1 1 auto; */
+    gap: 30px;
+}
+
 
 .overflowbutton{
     width: 300px;
@@ -240,6 +268,22 @@ footer p{
 }
 
 .oceanbutton:hover{
+    background: url("assets/oceanactive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.oceanbutton2{
+    position: relative;
+    /* top: 30%; */
+    width: 300px;
+    height: 280px;
+    transition: .2s;
+    background: url("assets/oceaninactive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.oceanbutton2:hover{
     background: url("assets/oceanactive.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -327,4 +371,33 @@ footer p{
     font-size: 1.225rem;
     min-width: 80ch;
     max-width: 90ch;
+}
+
+/* Ending pages for the overflow-end.html page */
+.endpage-cont{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.endtxt{
+    position: relative;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.endtxt2{
+    position: relative;
+    margin: 1%;
+    max-width: 60ch;
+    text-align: center;
+}
+
+#reread{
+    position: relative;
+    margin-bottom: 1%;
 }
