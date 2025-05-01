@@ -32,47 +32,51 @@ body{
 }
 
 .txtr{
-    position: absolute;
     right: 12%;
     top: 3%;
     /* opacity: 100%; */
 }
 
 .pg4R{
-    position: absolute;
     right: 15%;
     top: 3%; 
 }
 
 .pg4R2{
-    position: absolute;
     right: 11.5%;
     top: 4%; 
 }
 .pg4R3{
-    position: absolute;
     right: 11.5%;
     top: 4%; 
 }
 
 .pg6R1{
-    position: absolute;
     right: 10.5%;
     top: 13%; 
 }
 .pg6R2{
-    position: absolute;
     right: 13%;
     top: 9%; 
 }
 .pg6R3{
-    position: absolute;
     right: 12.5%;
     top: 8%; 
 }
 .pg6R4{
-    position: absolute;
     right: 12.5%;
+    top: 8%; 
+}
+.pg8R1{
+    right: 12.5%;
+    top: 8%; 
+}
+.pg10R1{
+    right: 14.5%;
+    top: 8%; 
+}
+.pg12R1{
+    right: 14.5%;
     top: 8%; 
 }
 
@@ -80,38 +84,42 @@ body{
     position: absolute;
     top: 7%;
     left: 12.5%;
-    /* right: 200px; */
-    /* opacity: 100%; */
 }
 .pg5L1{
-    position: absolute;
     top: 8%;
     left: 12.5%;
-    /* right: 200px; */
     opacity: 100%;
 }
 
 .pg5L2{
-    position: absolute;
     top: 8%;
     left: 12.5%;
-    /* right: 200px; */
-    /* opacity: 100%; */
 }
 .pg5L3{
-    position: absolute;
     top: 8%;
     left: 12.5%;
-    /* right: 200px; */
-    /* opacity: 100%; */
 }
 
 .pg7L1{
-    position: absolute;
     top: 8%;
     left: 12.5%;
-    /* right: 200px; */
-    /* opacity: 100%; */
+}
+.pg7L2{
+    top: 7%;
+    left: 13.5%;
+}
+.pg9L1{
+    top: 7%;
+    left: 13.5%;
+}
+.pg9L2{
+    top: 7%;
+    left: 11.5%;
+}
+
+.pg9L3{
+    top: 8%;
+    left: 12.5%;
 }
 
 .carousel-cont{

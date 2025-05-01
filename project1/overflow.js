@@ -34,13 +34,13 @@ const imageTxt =[
     {id: "13", className: "pg6R3", alt: ""},
     {id: "14", className: "pg6R4", alt: ""},
     {id: "15", className: "pg7L1", alt: ""},
-    {id: "16", className: "", alt: ""},
-    {id: "17", className: "", alt: ""},
-    {id: "18", className: "", alt: ""},
-    {id: "19", className: "", alt: ""},
-    {id: "20", className: "", alt: ""},
-    {id: "21", className: "", alt: ""},
-    {id: "22", className: "", alt: ""},
+    {id: "16", className: "pg7L2", alt: ""},
+    {id: "17", className: "pg8R1", alt: ""},
+    {id: "18", className: "pg9L1", alt: ""},
+    {id: "19", className: "pg9L2", alt: ""},
+    {id: "20", className: "pg9L3", alt: ""},
+    {id: "21", className: "pg10R1", alt: ""},
+    {id: "22", className: "pg12R1", alt: ""},
     {id: "23", className: "", alt: ""},
     {id: "24", className: "", alt: ""},
     {id: "25", className: "", alt: ""},
@@ -86,24 +86,12 @@ function showImage(index){
     carousel.style.opacity = 1;
     carousel.src = `overflow/Overflow-${imageData[index].id}.png`;
     carousel.alt = imageData[index].alt;
-    // words.className= imageData[index].className;
-    // words2.className= imageData[index].className;
-    // words3.className= imageData[index].className;
-    // words4.className= imageData[index].className;
-    // words5.className= imageData[index].className;
-    // words6.className= imageData[index].className;
-    // words7.className= imageData[index].className;
-    // words8.className= imageData[index].className;
-    // words9.className= imageData[index].className;
-    words.setAttribute('src', '');
-    words2.setAttribute('src', '');
-    words3.setAttribute('src', '');
-    words4.setAttribute('src', '');
-    words5.setAttribute('src', '');
-    words6.setAttribute('src', '');
-    words7.setAttribute('src', '');
-    words8.setAttribute('src', '');
-    words9.setAttribute('src', '');
+
+    //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
+    resetSrcOp();
+
+    fadeInAnim();
+
 
     if(currentIndex == 0){
         arrowL.setAttribute('disabled', true);
@@ -114,19 +102,11 @@ function showImage(index){
     }
 
     if(currentIndex + 1 == 1){
-        unfade(words);
+        // unfade(words);
         words.className= imageTxt[1].className;
         words.src = `overflow/Overflowtxt-${imageTxt[1].id}.png`;
     } else if(currentIndex == 2){
         // LEft PAgew
-        words2.style.opacity = 0;
-        words3.style.opacity = 0;
-        words4.style.opacity = 0;
-        unfade(words);
-        setTimeout(() => {unfade(words2);}, 300);
-        setTimeout(() => {unfade(words3);}, 600);
-        setTimeout(() => {unfade(words4);}, 900);
-        // unfade(words4);
         words.className= imageData[index].className;
         words2.className= imageData[index].className;
         words3.className= imageData[index].className;
@@ -137,11 +117,6 @@ function showImage(index){
         words4.src = `overflow/Overflowtxt-${imageTxt[5].id}.png`;
 
         // Right page
-        words5.style.opacity = 0;
-        words6.style.opacity = 0;
-        setTimeout(() => {unfade(words5);}, 1200);
-        setTimeout(() => {unfade(words6);}, 1500);
-
         words5.className= imageTxt[6].className;
         words6.className= imageTxt[7].className;
         words5.src = `overflow/Overflowtxt-${imageTxt[6].id}.png`;
@@ -149,13 +124,6 @@ function showImage(index){
     } else if(currentIndex == 4){
 
         //Left Page
-        words2.style.opacity = 0;
-        words3.style.opacity = 0;
-
-        unfade(words)
-        setTimeout(() => {unfade(words2);}, 300);
-        setTimeout(() => {unfade(words3);}, 600);
-
         words.className = imageTxt[8].className;
         words2.className = imageTxt[9].className;
         words3.className = imageTxt[10].className;
@@ -164,15 +132,6 @@ function showImage(index){
         words3.src = `overflow/Overflowtxt-${imageTxt[10].id}.png`;
 
         //Right Page
-        words4.style.opacity = 0;
-        words5.style.opacity = 0;
-        words6.style.opacity = 0;
-        words7.style.opacity = 0;
-
-        setTimeout(() => {unfade(words4);}, 1200);
-        setTimeout(() => {unfade(words5);}, 1500);
-        setTimeout(() => {unfade(words6);}, 1800);
-        setTimeout(() => {unfade(words7);}, 2100);
         words4.className = imageTxt[11].className;
         words5.className = imageTxt[12].className;
         words6.className = imageTxt[13].className;
@@ -184,14 +143,28 @@ function showImage(index){
     }else if(currentIndex == 6){
 
         //Left Page
-        words2.style.opacity = 0;
-        words3.style.opacity = 0;
-
-        unfade(words);
-        setTimeout(() => {unfade(words2);}, 300);
-
         words.className = imageTxt[15].className;
+        words2.className = imageTxt[16].className;
+        words3.className = imageTxt[17].className;
         words.src = `overflow/Overflowtxt-${imageTxt[15].id}.png`;
+        words2.src = `overflow/Overflowtxt-${imageTxt[16].id}.png`;
+        words3.src = `overflow/Overflowtxt-${imageTxt[17].id}.png`;
+    } else if(currentIndex == 8){
+
+        //Left PAge
+        words.className = imageTxt[18].className;
+        words2.className = imageTxt[19].className;
+        words3.className = imageTxt[20].className;
+        words.src = `overflow/Overflowtxt-${imageTxt[18].id}.png`;
+        words2.src = `overflow/Overflowtxt-${imageTxt[19].id}.png`;
+        words3.src = `overflow/Overflowtxt-${imageTxt[20].id}.png`;
+
+        //Right page
+        words4.className = imageTxt[21].className;
+        words4.src = `overflow/Overflowtxt-${imageTxt[21].id}.png`;
+    } else if(currentIndex == 10){
+        words.className = imageTxt[22].className;
+        words.src = `overflow/Overflowtxt-${imageTxt[22].id}.png`;
     }
 }
 
@@ -212,6 +185,39 @@ function prevImage(){
     showImage(currentIndex);
     showImage2(currentIndex);
     
+}
+
+function resetSrcOp(){
+    words.setAttribute('src', '');
+    words2.setAttribute('src', '');
+    words3.setAttribute('src', '');
+    words4.setAttribute('src', '');
+    words5.setAttribute('src', '');
+    words6.setAttribute('src', '');
+    words7.setAttribute('src', '');
+    words8.setAttribute('src', '');
+    words9.setAttribute('src', '');
+
+    words.style.opacity = 0;
+    words2.style.opacity = 0;
+    words3.style.opacity = 0;
+    words4.style.opacity = 0;
+    words5.style.opacity = 0;
+    words6.style.opacity = 0;
+    words7.style.opacity = 0;
+    words8.style.opacity = 0;
+    words9.style.opacity = 0;
+}
+
+function fadeInAnim(){
+    unfade(words);
+    setTimeout(() => {unfade(words2);}, 300);
+    setTimeout(() => {unfade(words3);}, 600);
+    setTimeout(() => {unfade(words4);}, 900);
+    setTimeout(() => {unfade(words5);}, 1200);
+    setTimeout(() => {unfade(words6);}, 1500);
+    setTimeout(() => {unfade(words6);}, 1800);
+    setTimeout(() => {unfade(words7);}, 2100);
 }
 
 
