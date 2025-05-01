@@ -216,8 +216,9 @@ function fadeInAnim(){
     setTimeout(() => {unfade(words4);}, 900);
     setTimeout(() => {unfade(words5);}, 1200);
     setTimeout(() => {unfade(words6);}, 1500);
-    setTimeout(() => {unfade(words6);}, 1800);
-    setTimeout(() => {unfade(words7);}, 2100);
+    setTimeout(() => {unfade(words7);}, 1800);
+    setTimeout(() => {unfade(words8);}, 2100);
+    setTimeout(() => {unfade(words9);}, 2400);
 }
 
 
