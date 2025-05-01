@@ -41,15 +41,15 @@ const imageTxt =[
     {id: "20", className: "pg9L3", alt: ""},
     {id: "21", className: "pg10R1", alt: ""},
     {id: "22", className: "pg12R1", alt: ""},
-    {id: "23", className: "", alt: ""},
-    {id: "24", className: "", alt: ""},
-    {id: "25", className: "", alt: ""},
-    {id: "26", className: "", alt: ""},
-    {id: "27", className: "", alt: ""},
-    {id: "28", className: "", alt: ""},
-    {id: "29", className: "", alt: ""},
-    {id: "30", className: "", alt: ""},
-    {id: "31", className: "", alt: ""}
+    {id: "23", className: "pg13L1", alt: ""},
+    {id: "24", className: "pg13L2", alt: ""},
+    {id: "25", className: "pg13L3", alt: ""},
+    {id: "26", className: "pg13L4", alt: ""},
+    {id: "27", className: "pg13L5", alt: ""},
+    {id: "28", className: "pg14R1", alt: ""},
+    {id: "29", className: "pg14R2", alt: ""},
+    {id: "30", className: "pg15L1", alt: ""},
+    {id: "31", className: "pg15L2", alt: ""}
 ];
 
 let currentIndex = 0;
@@ -65,6 +65,7 @@ const words7 = document.getElementById("words7");
 const words8 = document.getElementById("words8");
 const words9 = document.getElementById("words9");
 var arrowL = document.getElementById("al");
+var arrowR = document.getElementById("ar");
 let atoplayInterval = null;
 let isPlaying = false;
 
@@ -93,6 +94,7 @@ function showImage(index){
     fadeInAnim();
 
 
+    //diables the left arrow  if it is the beginning of the story.
     if(currentIndex == 0){
         arrowL.setAttribute('disabled', true);
         arrowL.style.opacity = 0;
@@ -100,6 +102,15 @@ function showImage(index){
         arrowL.removeAttribute('disabled');
         arrowL.style.opacity = 1;
     }
+
+    if(currentIndex == 14){
+        arrowR.onclick = function(){
+            window.open('overflow-end.html', '_parent');
+        }
+    } else {
+        arrowR.onclick = function(){nextImage()};
+    }
+
 
     if(currentIndex + 1 == 1){
         // unfade(words);
@@ -165,6 +176,31 @@ function showImage(index){
     } else if(currentIndex == 10){
         words.className = imageTxt[22].className;
         words.src = `overflow/Overflowtxt-${imageTxt[22].id}.png`;
+    } else if(currentIndex == 12){
+
+        // Left Page
+        words.className = imageTxt[23].className;
+        words2.className = imageTxt[24].className;
+        words3.className = imageTxt[25].className;
+        words4.className = imageTxt[26].className;
+        words5.className = imageTxt[27].className;
+        words.src = `overflow/Overflowtxt-${imageTxt[23].id}.png`;
+        words2.src = `overflow/Overflowtxt-${imageTxt[24].id}.png`;
+        words3.src = `overflow/Overflowtxt-${imageTxt[25].id}.png`;
+        words4.src = `overflow/Overflowtxt-${imageTxt[26].id}.png`;
+        words5.src = `overflow/Overflowtxt-${imageTxt[27].id}.png`;
+
+        //Right Page
+        words6.className = imageTxt[28].className;
+        words7.className = imageTxt[29].className;
+        words6.src = `overflow/Overflowtxt-${imageTxt[28].id}.png`;
+        words7.src = `overflow/Overflowtxt-${imageTxt[29].id}.png`;
+    } else if(currentIndex == 14){
+        words.className = imageTxt[30].className;
+        words2.className = imageTxt[31].className;
+        words.src = `overflow/Overflowtxt-${imageTxt[30].id}.png`;
+        words2.src = `overflow/Overflowtxt-${imageTxt[31].id}.png`;
+
     }
 }
 
