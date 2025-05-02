@@ -24,6 +24,11 @@ body{
     /* transition: opacity 0.5s; */
 }
 
+.oceantitle{
+    top: 10%;
+    left: 13%;
+}
+
 .carousel-cont{
     position: relative;
     top: -60px;

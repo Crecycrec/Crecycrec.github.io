@@ -18,7 +18,7 @@ const imageData =[
 ];
 
 const imageTxt =[
-    {id: "0", className: "", alt: ""}
+    {id: "0", className: "oceantitle", alt: ""}
 ]
 
 let currentIndex = 0;
@@ -52,6 +52,21 @@ function showImage(index){
 
     //just fades in all the text everytime even if it is empty.
     fadeInAnim();
+
+    if(currentIndex==0){
+        arrowL.setAttribute('disabled', true);
+        arrowL.style.opacity = 0;
+        words.className= imageTxt[0].className;
+        words.src = `ocean/oceantxt-${imageTxt[0].id}.png`;
+    } else if(currentIndex==14){
+        arrowR.onclick = function(){
+            window.open('ocean-end.html', '_parent');
+        }
+    } else{
+        arrowL.removeAttribute('disabled');
+        arrowL.style.opacity = 1;
+        arrowR.onclick = function(){nextImage()};
+    }
 }
 
 function showImage2(index){
@@ -79,7 +94,6 @@ function prevImage(){
 
 function resetSrcOp(){
     words.setAttribute('src', '');
-
     words.style.opacity = 0;
 }
 
