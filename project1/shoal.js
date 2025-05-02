@@ -21,23 +21,23 @@ const imageTxt =[
     {id: "4", className: "pg1L4", alt: ""},
     {id: "5", className: "pg2R1", alt: ""},
     {id: "6", className: "pg2R2", alt: ""},
-    {id: "7", className: "", alt: ""},
-    {id: "8", className: "", alt: ""},
-    {id: "9", className: "", alt: ""},
-    {id: "10", className: "", alt: ""},
-    {id: "11", className: "", alt: ""},
-    {id: "12", className: "", alt: ""},
-    {id: "13", className: "", alt: ""},
-    {id: "14", className: "", alt: ""},
-    {id: "15", className: "", alt: ""},
-    {id: "16", className: "", alt: ""},
-    {id: "17", className: "", alt: ""},
-    {id: "18", className: "", alt: ""},
-    {id: "19", className: "", alt: ""},
-    {id: "20", className: "", alt: ""},
-    {id: "21", className: "", alt: ""},
-    {id: "22", className: "", alt: ""},
-    {id: "23", className: "", alt: ""},
+    {id: "7", className: "pg3L1", alt: ""},
+    {id: "8", className: "pg3L2", alt: ""},
+    {id: "9", className: "pg3L3", alt: ""},
+    {id: "10", className: "pg3L4", alt: ""},
+    {id: "11", className: "pg3L5", alt: ""},
+    {id: "12", className: "pg3L6", alt: ""},
+    {id: "13", className: "pg4R1", alt: ""},
+    {id: "14", className: "pg4R2", alt: ""},
+    {id: "15", className: "pg4R3", alt: ""},
+    {id: "16", className: "pg4R3", alt: ""},
+    {id: "17", className: "pg5L1", alt: ""},
+    {id: "18", className: "pg5L2", alt: ""},
+    {id: "19", className: "pg5L3", alt: ""},
+    {id: "20", className: "pg6R1", alt: ""},
+    {id: "21", className: "pg6R2", alt: ""},
+    {id: "22", className: "pg6R3", alt: ""},
+    {id: "23", className: "pg6R4", alt: ""},
     {id: "24", className: "", alt: ""},
     {id: "25", className: "", alt: ""},
     {id: "26", className: "", alt: ""},
@@ -118,8 +118,42 @@ function showImage(index){
             break;
         case 4:
             //Left Page
+            words.className= imageTxt[7].className;
+            words2.className= imageTxt[8].className;
+            words3.className= imageTxt[9].className;
+            words4.className= imageTxt[10].className;
+            words5.className= imageTxt[11].className;
+            words6.className= imageTxt[12].className;
+            words7.className= imageTxt[13].className;
+            words8.className= imageTxt[14].className;
+            words9.className= imageTxt[15].className;
+            words10.className= imageTxt[16].className;
+            words.src = `shoal/shoaltxt-${imageTxt[7].id}.png`;
+            words2.src = `shoal/shoaltxt-${imageTxt[8].id}.png`;
+            words3.src = `shoal/shoaltxt-${imageTxt[9].id}.png`;
+            words4.src = `shoal/shoaltxt-${imageTxt[10].id}.png`;
+            words5.src = `shoal/shoaltxt-${imageTxt[11].id}.png`;
+            words6.src = `shoal/shoaltxt-${imageTxt[12].id}.png`;
+            words7.src = `shoal/shoaltxt-${imageTxt[13].id}.png`;
+            words8.src = `shoal/shoaltxt-${imageTxt[14].id}.png`;
+            words9.src = `shoal/shoaltxt-${imageTxt[15].id}.png`;
+            words10.src = `shoal/shoaltxt-${imageTxt[16].id}.png`;
             break;
         case 6:
+            words.className= imageTxt[17].className;
+            words2.className= imageTxt[18].className;
+            words3.className= imageTxt[19].className;
+            words4.className= imageTxt[20].className;
+            words5.className= imageTxt[21].className;
+            words6.className= imageTxt[22].className;
+            words7.className= imageTxt[23].className;
+            words.src = `shoal/shoaltxt-${imageTxt[17].id}.png`;
+            words2.src = `shoal/shoaltxt-${imageTxt[18].id}.png`;
+            words3.src = `shoal/shoaltxt-${imageTxt[19].id}.png`;
+            words4.src = `shoal/shoaltxt-${imageTxt[20].id}.png`;
+            words5.src = `shoal/shoaltxt-${imageTxt[21].id}.png`;
+            words6.src = `shoal/shoaltxt-${imageTxt[22].id}.png`;
+            words7.src = `shoal/shoaltxt-${imageTxt[23].id}.png`;
             break;
         case 8:
             //Left PAge

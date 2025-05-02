@@ -15,11 +15,11 @@ body{
     min-width: 70px;
 }
 
-#words, #words2, #words3, #words4, #words5, #words6, #words7, #words8, #words9{
+#words, #words2, #words3, #words4, #words5, #words6, #words7, #words8, #words9, #words10{
     position: absolute;
     width: 38%;
     object-fit: cover;
-    /* opacity: 100%; */
+    
     z-index: 200;
     /* transition: opacity 0.5s; */
 }
@@ -28,48 +28,110 @@ body{
     position: absolute;
     top: 10%;
     right: 13%;
-    /* opacity: 100%; */
+    
 }
 
 .txtr{
     right: 12%;
     top: 3%;
-    /* opacity: 100%; */
+    
 }
 
 .pg2R1, .pg2R2{
     right: 13%;
     top: 10%; 
 }
-
+.pg4R1{
+    right: 12%;
+    top: 10%; 
+}
+.pg4R2{
+    right: 13%;
+    top: 10%; 
+}
+.pg4R3{
+    right: 13%;
+    top: 8%; 
+}
+.pg6R1{
+    right: 13%;
+    top: 8%; 
+}
+.pg6R2{
+    right: 12%;
+    top: 8%; 
+}
+.pg6R3{
+    right: 13%;
+    top: 8%; 
+}
+.pg6R4{
+    right: 12.5%;
+    top: 6%; 
+}
 
 
 .shoaltitle{
     position: absolute;
     top: 10%;
     right: 13%;
-    /* opacity: 100%; */
+    
 }
 
 .pg1L1{
     top: 10%;
     left: 12.5%;
-    /* opacity: 100%; */
+    
 }
 .pg1L2{
     top: 8%;
     left: 13.5%;
-    /* opacity: 100%; */
+    
 }
 .pg1L3{
     top: 8%;
     left: 12.5%;
-    /* opacity: 100%; */
+    
 }
 .pg1L4{
     top: 8%;
     left: 13.5%;
-    /* opacity: 100%; */
+    
+}
+.pg3L1, .pg3L3{
+    top: 8%;
+    left: 13.5%;
+    
+}
+.pg3L2{
+    top: 8%;
+    left: 12.8%;
+    
+}
+.pg3L4{
+    top: 7%;
+    left: 13%;
+    
+}
+.pg3L5{
+    top: 7%;
+    left: 13.5%;
+    
+}
+.pg3L6{
+    top: 8%;
+    left: 12.5%;
+    
+}
+.pg5L1{
+    top: 10%;
+    left: 13%;
+    
+}
+.pg5L2, .pg5L3{
+    top: 8%;
+    left: 12.5%;
+    
 }
 
 
