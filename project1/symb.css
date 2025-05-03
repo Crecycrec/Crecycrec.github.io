@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: "Kosugi Maru", sans-serif;
+    color: #2F0000;
+}
+#logoimg{
+    position: relative;
+    top: 5px;
+    left: 2%;
+    width: 6%;
+    min-width: 70px;
+}
+
+#words, #words2, #words3, #words4, #words5, #words6, #words7, #words8, #words9, #words10, #words11, #words12, #words13, #words14, #words15, #words16{
+    position: absolute;
+    width: 38%;
+    object-fit: cover;
+    
+    z-index: 200;
+    /* transition: opacity 0.5s; */
+}
+
+.oceantitle{
+    top: 10%;
+    left: 13%;
+}
+
+.carousel-cont{
+    position: relative;
+    top: -60px;
+    width: 80%;
+    min-width: 90vw;
+    min-height: 90vh;
+    overflow:hidden;
+    margin: 60px auto;
+}
+
+#carousel{
+    position: relative;
+    width: 40%;
+    /* height: 150%; */
+    left: 10%;
+    border: 2px solid #2F0000;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#carousel2{
+    position: relative;
+    left: 9.4%;
+    width: 40%;
+    /* height: 150%; */
+    border: 2px solid #2F0000;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2.5rem;
+    color:#2F0000;
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.3s;
+}
+#ar2{
+    opacity: 0;
+}
+
+.arrow:hover{
+    font-size: 2.7rem;
+}
+.arrow-right{
+    right: 20px;
+}
+
+/* Pages */
+
+.symtitle{
+    position: absolute;
+    top: 7.5%;
+    left: 13%;
+    
+}
+
+.pg4R1{
+    right: 12%;
+    top: 10%; 
+}
