@@ -17,7 +17,7 @@ body{
 
 #words, #words2, #words3, #words4, #words5, #words6, #words7, #words8, #words9, #words10, #words11, #words12, #words13, #words14, #words15, #words16{
     position: absolute;
-    width: 38%;
+    width: 36.5%;
     object-fit: cover;
     
     z-index: 200;
@@ -91,8 +91,83 @@ body{
     left: 13%;
     
 }
+.symtitle2{
+    position: absolute;
+    top: 10.5%;
+    left: 14.5%;
+    
+}
 
-.pg4R1{
+.pg1R1{
+    right: 13.7%;
+    top: 10%; 
+}
+.pg1R2{
     right: 12%;
+    top: 10%; 
+}
+.pg2L1{
+    left: 13%;
+    top: 11%; 
+}
+.pg2L2{
+    left: 13.5%;
+    top: 11%; 
+}
+.pg2L3{
+    left: 13.5%;
+    top: 10%; 
+}
+.pg2L4{
+    left: 13.5%;
+    top: 10%; 
+}
+.pg2L5{
+    left: 13.5%;
+    top: 10%; 
+}
+.pg2L6{
+    left: 12%;
+    top: 10%; 
+}
+.pg2L7{
+    left: 13.8%;
+    top: 10%; 
+}
+.pg2L8{
+    left: 13.5%;
+    top: 10%; 
+}
+
+.pg3R1{
+    right: 13.7%;
+    top: 10%; 
+}
+.pg3R2{
+    right: 13.7%;
+    top: 10%; 
+}
+.pg3R3{
+    right: 15.7%;
+    top: 10%; 
+}
+.pg3R4{
+    right: 13.7%;
+    top: 10%; 
+}
+.pg3R5{
+    right: 13.7%;
+    top: 10%; 
+}
+.pg3R6{
+    right: 12%;
+    top: 10%; 
+}
+.pg3R7{
+    right: 14%;
+    top: 10%; 
+}
+.pg3R8{
+    right: 13.7%;
     top: 10%; 
 }
