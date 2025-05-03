@@ -69,6 +69,30 @@ body{
     right: 12.5%;
     top: 6%; 
 }
+.pg8R1{
+    right: 13%;
+    top: 10%; 
+}
+.pg8R2{
+    right: 12.5%;
+    top: 8%; 
+}
+.pg8R3{
+    right: 12.5%;
+    top: 6%; 
+}
+.pg8R4{
+    right: 12.5%;
+    top: 6%; 
+}
+.pg8R5{
+    right: 12.5%;
+    top: 6%; 
+}
+.pg10R1{
+    right: 13%;
+    top: 10%; 
+}
 
 
 .shoaltitle{
@@ -130,6 +154,26 @@ body{
 }
 .pg5L2, .pg5L3{
     top: 8%;
+    left: 12.5%;
+    
+}
+.pg7L1{
+    top: 9%;
+    left: 12.5%;
+    
+}
+.pg9L1{
+    top: 9%;
+    left: 12.5%;
+    
+}
+.pg9L2{
+    top: 9%;
+    left: 12.5%;
+    
+}
+.pg9L3{
+    top: 10%;
     left: 12.5%;
     
 }

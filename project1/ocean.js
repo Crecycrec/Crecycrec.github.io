@@ -8,7 +8,7 @@ const imageData =[
     {id: "6", className: "", alt: ""},
     {id: "7", className: "", alt: ""},
     {id: "8", className: "", alt: ""},
-    {id: "9", className: "", alt: ""},
+    {id: "9", className: "", alta: ""},
     {id: "10", className: "", alt: ""},
     {id: "11", className: "", alt: ""},
     {id: "12", className: "", alt: ""},

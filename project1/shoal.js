@@ -38,16 +38,16 @@ const imageTxt =[
     {id: "21", className: "pg6R2", alt: ""},
     {id: "22", className: "pg6R3", alt: ""},
     {id: "23", className: "pg6R4", alt: ""},
-    {id: "24", className: "", alt: ""},
-    {id: "25", className: "", alt: ""},
-    {id: "26", className: "", alt: ""},
-    {id: "27", className: "", alt: ""},
-    {id: "28", className: "", alt: ""},
-    {id: "29", className: "", alt: ""},
-    {id: "30", className: "", alt: ""},
-    {id: "31", className: "", alt: ""},
-    {id: "32", className: "", alt: ""},
-    {id: "33", className: "", alt: ""}
+    {id: "24", className: "pg7L1", alt: ""},
+    {id: "25", className: "pg8R1", alt: ""},
+    {id: "26", className: "pg8R2", alt: ""},
+    {id: "27", className: "pg8R3", alt: ""},
+    {id: "28", className: "pg8R4", alt: ""},
+    {id: "29", className: "pg8R5", alt: ""},
+    {id: "30", className: "pg9L1", alt: ""},
+    {id: "31", className: "pg9L2", alt: ""},
+    {id: "32", className: "pg9L3", alt: ""},
+    {id: "33", className: "pg10R1", alt: ""}
 ];
 
 let currentIndex = 0;
@@ -157,12 +157,32 @@ function showImage(index){
             break;
         case 8:
             //Left PAge
+            words.className= imageTxt[24].className;
+            words2.className= imageTxt[25].className;
+            words3.className= imageTxt[26].className;
+            words4.className= imageTxt[27].className;
+            words5.className= imageTxt[28].className;
+            words6.className= imageTxt[29].className;
+            words.src = `shoal/shoaltxt-${imageTxt[24].id}.png`;
+            words2.src = `shoal/shoaltxt-${imageTxt[25].id}.png`;
+            words3.src = `shoal/shoaltxt-${imageTxt[26].id}.png`;
+            words4.src = `shoal/shoaltxt-${imageTxt[27].id}.png`;
+            words5.src = `shoal/shoaltxt-${imageTxt[28].id}.png`;
+            words6.src = `shoal/shoaltxt-${imageTxt[29].id}.png`;
             arrowR.onclick = function(){nextImage()};
             break;
         case 10:
             arrowR.onclick = function(){
                 window.open('shoal-end.html', '_parent');
             }
+            words.className= imageTxt[30].className;
+            words2.className= imageTxt[31].className;
+            words3.className= imageTxt[32].className;
+            words4.className= imageTxt[33].className;
+            words.src = `shoal/shoaltxt-${imageTxt[30].id}.png`;
+            words2.src = `shoal/shoaltxt-${imageTxt[31].id}.png`;
+            words3.src = `shoal/shoaltxt-${imageTxt[32].id}.png`;
+            words4.src = `shoal/shoaltxt-${imageTxt[33].id}.png`;
             break;
         default:
             //I don't think I need this but I have it hear out of my own paranoia
@@ -197,17 +217,6 @@ function prevImage(){
 }
 
 function resetSrcOp(){
-    words.setAttribute('src', '');
-    words2.setAttribute('src', '');
-    words3.setAttribute('src', '');
-    words4.setAttribute('src', '');
-    words5.setAttribute('src', '');
-    words6.setAttribute('src', '');
-    words7.setAttribute('src', '');
-    words8.setAttribute('src', '');
-    words9.setAttribute('src', '');
-    words10.setAttribute('src', '');
-
     words.style.opacity = 0;
     words2.style.opacity = 0;
     words3.style.opacity = 0;
@@ -218,6 +227,18 @@ function resetSrcOp(){
     words8.style.opacity = 0;
     words9.style.opacity = 0;
     words10.style.opacity = 0;
+
+
+    words.setAttribute('src', '');
+    words2.setAttribute('src', '');
+    words3.setAttribute('src', '');
+    words4.setAttribute('src', '');
+    words5.setAttribute('src', '');
+    words6.setAttribute('src', '');
+    words7.setAttribute('src', '');
+    words8.setAttribute('src', '');
+    words9.setAttribute('src', '');
+    words10.setAttribute('src', '');
 }
 
 function fadeInAnim(){
