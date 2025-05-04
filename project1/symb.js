@@ -34,16 +34,16 @@ const imageTxt =[
     {id: "17", className: "pg3R6", alt: ""},
     {id: "18", className: "pg3R7", alt: ""},
     {id: "19", className: "pg3R8", alt: ""},
-    {id: "20", className: "", alt: ""},
-    {id: "21", className: "", alt: ""},
-    {id: "22", className: "", alt: ""},
-    {id: "23", className: "", alt: ""},
-    {id: "24", className: "", alt: ""},
-    {id: "25", className: "", alt: ""},
-    {id: "26", className: "", alt: ""},
-    {id: "27", className: "", alt: ""},
-    {id: "28", className: "", alt: ""},
-    {id: "29", className: "", alt: ""},
+    {id: "20", className: "pg4L1", alt: ""},
+    {id: "21", className: "pg4L2", alt: ""},
+    {id: "22", className: "pg4L3", alt: ""},
+    {id: "23", className: "pg4L4", alt: ""},
+    {id: "24", className: "pg4L5", alt: ""},
+    {id: "25", className: "pg5R1", alt: ""},
+    {id: "26", className: "pg5R2", alt: ""},
+    {id: "27", className: "pg5R3", alt: ""},
+    {id: "28", className: "pg5R4", alt: ""},
+    {id: "29", className: "pg5R5", alt: ""},
     {id: "30", className: "", alt: ""},
     {id: "31", className: "", alt: ""},
     {id: "32", className: "", alt: ""},
@@ -150,7 +150,26 @@ function showImage(index){
             break;
         case 4:
             //Left Page
-
+            words.className= imageTxt[20].className;
+            words2.className= imageTxt[21].className;
+            words3.className= imageTxt[22].className;
+            words4.className= imageTxt[23].className;
+            words5.className= imageTxt[24].className;
+            words6.className= imageTxt[25].className;
+            words7.className= imageTxt[26].className;
+            words8.className= imageTxt[27].className;
+            words9.className= imageTxt[28].className;
+            words10.className= imageTxt[29].className;
+            words.src = `symbiosis/symtxt-${imageTxt[20].id}.png`;
+            words2.src = `symbiosis/symtxt-${imageTxt[21].id}.png`;
+            words3.src = `symbiosis/symtxt-${imageTxt[22].id}.png`;
+            words4.src = `symbiosis/symtxt-${imageTxt[23].id}.png`;
+            words5.src = `symbiosis/symtxt-${imageTxt[24].id}.png`;
+            words6.src = `symbiosis/symtxt-${imageTxt[25].id}.png`;
+            words7.src = `symbiosis/symtxt-${imageTxt[26].id}.png`;
+            words8.src = `symbiosis/symtxt-${imageTxt[27].id}.png`;
+            words9.src = `symbiosis/symtxt-${imageTxt[28].id}.png`;
+            words10.src = `symbiosis/symtxt-${imageTxt[29].id}.png`;
             break;
         case 6:
 
