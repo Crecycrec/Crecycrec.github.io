@@ -44,10 +44,16 @@ const imageTxt =[
     {id: "27", className: "pg5R3", alt: ""},
     {id: "28", className: "pg5R4", alt: ""},
     {id: "29", className: "pg5R5", alt: ""},
-    {id: "30", className: "", alt: ""},
-    {id: "31", className: "", alt: ""},
-    {id: "32", className: "", alt: ""},
-    {id: "33", className: "", alt: ""}
+    {id: "30", className: "pg6L1", alt: ""},
+    {id: "31", className: "pg7R1", alt: ""},
+    {id: "32", className: "pg8L1", alt: ""},
+    {id: "33", className: "pg8L2", alt: ""},
+    {id: "34", className: "pg8L3", alt: ""},
+    {id: "35", className: "pg9R1", alt: ""},
+    {id: "36", className: "pg9R2", alt: ""},
+    {id: "37", className: "pg9R3", alt: ""},
+    {id: "38", className: "pg10L1", alt: ""},
+    {id: "39", className: "pg11R1", alt: ""}
 ];
 
 let currentIndex = 0;
@@ -172,17 +178,35 @@ function showImage(index){
             words10.src = `symbiosis/symtxt-${imageTxt[29].id}.png`;
             break;
         case 6:
-
+            words.className= imageTxt[30].className;
+            words2.className= imageTxt[31].className;
+            words.src = `symbiosis/symtxt-${imageTxt[30].id}.png`;
+            words2.src = `symbiosis/symtxt-${imageTxt[31].id}.png`;
             break;
         case 8:
             //Left PAge
-
+            words.className= imageTxt[32].className;
+            words2.className= imageTxt[33].className;
+            words3.className= imageTxt[34].className;
+            words4.className= imageTxt[35].className;
+            words5.className= imageTxt[36].className;
+            words6.className= imageTxt[37].className;
+            words.src = `symbiosis/symtxt-${imageTxt[32].id}.png`;
+            words2.src = `symbiosis/symtxt-${imageTxt[33].id}.png`;
+            words3.src = `symbiosis/symtxt-${imageTxt[34].id}.png`;
+            words4.src = `symbiosis/symtxt-${imageTxt[35].id}.png`;
+            words5.src = `symbiosis/symtxt-${imageTxt[36].id}.png`;
+            words6.src = `symbiosis/symtxt-${imageTxt[37].id}.png`;
             arrowR.onclick = function(){nextImage()};
             break;
         case 10:
             arrowR.onclick = function(){
                 window.open('symbiosis-end.html', '_parent');
             }
+            words.className= imageTxt[38].className;
+            words2.className= imageTxt[39].className;
+            words.src = `symbiosis/symtxt-${imageTxt[38].id}.png`;
+            words2.src = `symbiosis/symtxt-${imageTxt[39].id}.png`;
             break;
         default:
             //I don't think I need this but I have it hear out of my own paranoia
