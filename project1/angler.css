@@ -24,9 +24,17 @@ body{
     /* transition: opacity 0.5s; */
 }
 
-.oceantitle{
-    top: 10%;
-    left: 13%;
+.anglerTitle{
+    top: 10.5%;
+    left: 13.5%;
+}
+.pg2L1{
+    top: 10.5%;
+    left: 13.5%;
+}
+.pg1R1{
+    top: 10.5%;
+    right: 13.5%;
 }
 
 .carousel-cont{
