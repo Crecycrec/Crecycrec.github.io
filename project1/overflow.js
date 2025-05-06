@@ -66,6 +66,7 @@ const words8 = document.getElementById("words8");
 const words9 = document.getElementById("words9");
 var arrowL = document.getElementById("al");
 var arrowR = document.getElementById("ar");
+var e = document.getElementById("pagenum");
 
 function unfade(element) {
     var op = 0.1;  // initial opacity
@@ -91,6 +92,7 @@ function showImage(index){
 
     //just fades in all the text everytime even if it is empty.
     fadeInAnim();
+    e.value = currentIndex;
 
     switch(currentIndex){
         case 0:
