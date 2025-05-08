@@ -297,21 +297,21 @@ function resetSrcOp(){
 
 function fadeInAnim(){
     unfade(words);
-    setTimeout(() => {unfade(words2);}, 300);
-    setTimeout(() => {unfade(words3);}, 600);
-    setTimeout(() => {unfade(words4);}, 900);
-    setTimeout(() => {unfade(words5);}, 1200);
-    setTimeout(() => {unfade(words6);}, 1500);
-    setTimeout(() => {unfade(words7);}, 1800);
-    setTimeout(() => {unfade(words8);}, 2100);
-    setTimeout(() => {unfade(words9);}, 2400);
-    setTimeout(() => {unfade(words10);}, 2700);
-    setTimeout(() => {unfade(words11);}, 3000);
-    setTimeout(() => {unfade(words12);}, 3300);
-    setTimeout(() => {unfade(words13);}, 3600);
-    setTimeout(() => {unfade(words14);}, 3900);
-    setTimeout(() => {unfade(words15);}, 4200);
-    setTimeout(() => {unfade(words16);}, 4500);
+    setTimeout(() => {unfade(words2);}, 400);
+    setTimeout(() => {unfade(words3);}, 800);
+    setTimeout(() => {unfade(words4);}, 1200);
+    setTimeout(() => {unfade(words5);}, 1600);
+    setTimeout(() => {unfade(words6);}, 2000);
+    setTimeout(() => {unfade(words7);}, 2400);
+    setTimeout(() => {unfade(words8);}, 2800);
+    setTimeout(() => {unfade(words9);}, 3200);
+    setTimeout(() => {unfade(words10);}, 3600);
+    setTimeout(() => {unfade(words11);}, 4000);
+    setTimeout(() => {unfade(words12);}, 4400);
+    setTimeout(() => {unfade(words13);}, 4800);
+    setTimeout(() => {unfade(words14);}, 5200);
+    setTimeout(() => {unfade(words15);}, 5600);
+    setTimeout(() => {unfade(words16);}, 6000);
 }
 
 showImage(currentIndex);
