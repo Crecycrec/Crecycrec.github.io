@@ -66,7 +66,7 @@ const words8 = document.getElementById("words8");
 const words9 = document.getElementById("words9");
 var arrowL = document.getElementById("al");
 var arrowR = document.getElementById("ar");
-var e = document.getElementById("pagenum");
+const e = document.getElementById("pagenum");
 
 function unfade(element) {
     var op = 0.1;  // initial opacity
@@ -120,6 +120,8 @@ function showImage(index){
             words6.src = `overflow/Overflowtxt-${imageTxt[7].id}.png`;
             break;
         case 4:
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
             //Left Page
             words.className = imageTxt[8].className;
             words2.className = imageTxt[9].className;
@@ -140,6 +142,8 @@ function showImage(index){
             break;
         case 6:
             //Left Page
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
             words.className = imageTxt[15].className;
             words2.className = imageTxt[16].className;
             words3.className = imageTxt[17].className;
@@ -149,6 +153,8 @@ function showImage(index){
             break;
         case 8:
             //Left PAge
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
             words.className = imageTxt[18].className;
             words2.className = imageTxt[19].className;
             words3.className = imageTxt[20].className;
@@ -161,11 +167,15 @@ function showImage(index){
             words4.src = `overflow/Overflowtxt-${imageTxt[21].id}.png`;
             break;
         case 10:
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
             words.className = imageTxt[22].className;
             words.src = `overflow/Overflowtxt-${imageTxt[22].id}.png`;
             break;
         case 12:
             // Left Page
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
             words.className = imageTxt[23].className;
             words2.className = imageTxt[24].className;
             words3.className = imageTxt[25].className;
@@ -185,6 +195,8 @@ function showImage(index){
             arrowR.onclick = function(){nextImage()};
             break;
         case 14:
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
             words.className = imageTxt[30].className;
             words2.className = imageTxt[31].className;
             words.src = `overflow/Overflowtxt-${imageTxt[30].id}.png`;
@@ -226,6 +238,13 @@ function prevImage(){
     
 }
 
+function showSelected(){
+    resetSrcOp();
+    currentIndex= e.value % imageData.length;;
+    showImage(currentIndex);
+    showImage2(currentIndex);
+}
+
 function resetSrcOp(){
     words.setAttribute('src', '');
     words2.setAttribute('src', '');
@@ -262,3 +281,9 @@ function fadeInAnim(){
 
 showImage(currentIndex);
 showImage2(currentIndex);
+
+
+e.addEventListener('change', () => {
+    currentIndex = e.value;
+    showSelected();
+});
