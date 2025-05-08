@@ -98,12 +98,14 @@ function showImage(index){
         case 0:
             arrowL.setAttribute('disabled', true);
             arrowL.style.opacity = 0;
+            arrowR.onclick = function(){nextImage()};
             words.className= imageTxt[1].className;
             words.src = `overflow/Overflowtxt-${imageTxt[1].id}.png`;
             break;
         case 2:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className= imageData[index].className;
             words2.className= imageData[index].className;
             words3.className= imageData[index].className;
@@ -122,6 +124,7 @@ function showImage(index){
         case 4:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             //Left Page
             words.className = imageTxt[8].className;
             words2.className = imageTxt[9].className;
@@ -144,6 +147,7 @@ function showImage(index){
             //Left Page
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className = imageTxt[15].className;
             words2.className = imageTxt[16].className;
             words3.className = imageTxt[17].className;
@@ -155,6 +159,7 @@ function showImage(index){
             //Left PAge
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className = imageTxt[18].className;
             words2.className = imageTxt[19].className;
             words3.className = imageTxt[20].className;
@@ -169,6 +174,7 @@ function showImage(index){
         case 10:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className = imageTxt[22].className;
             words.src = `overflow/Overflowtxt-${imageTxt[22].id}.png`;
             break;
@@ -176,6 +182,7 @@ function showImage(index){
             // Left Page
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className = imageTxt[23].className;
             words2.className = imageTxt[24].className;
             words3.className = imageTxt[25].className;
@@ -197,6 +204,7 @@ function showImage(index){
         case 14:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className = imageTxt[30].className;
             words2.className = imageTxt[31].className;
             words.src = `overflow/Overflowtxt-${imageTxt[30].id}.png`;

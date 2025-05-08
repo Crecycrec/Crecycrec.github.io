@@ -65,6 +65,7 @@ const words9 = document.getElementById("words9");
 const words10 = document.getElementById("words10");
 var arrowL = document.getElementById("al");
 var arrowR = document.getElementById("ar");
+const e = document.getElementById("pagenum");
 
 function unfade(element) {
     var op = 0.1;  // initial opacity
@@ -87,12 +88,14 @@ function showImage(index){
 
     // //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
     resetSrcOp();
+    e.value = currentIndex;
 
     //just fades in all the text everytime even if it is empty.
     fadeInAnim();
 
     switch(currentIndex){
         case 0:
+            arrowR.onclick = function(){nextImage()};
             arrowL.setAttribute('disabled', true);
             arrowL.style.opacity = 0;
             carousel.style.border = 0;
@@ -100,6 +103,7 @@ function showImage(index){
             words.src = `shoal/shoaltxt-${imageTxt[0].id}.png`;
             break;
         case 2:
+            arrowR.onclick = function(){nextImage()};
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
             carousel.style.border = "2px solid #2F0000";
@@ -118,6 +122,10 @@ function showImage(index){
             break;
         case 4:
             //Left Page
+            arrowR.onclick = function(){nextImage()};
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            carousel.style.border = "2px solid #2F0000";
             words.className= imageTxt[7].className;
             words2.className= imageTxt[8].className;
             words3.className= imageTxt[9].className;
@@ -140,6 +148,10 @@ function showImage(index){
             words10.src = `shoal/shoaltxt-${imageTxt[16].id}.png`;
             break;
         case 6:
+            arrowR.onclick = function(){nextImage()};
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            carousel.style.border = "2px solid #2F0000";
             words.className= imageTxt[17].className;
             words2.className= imageTxt[18].className;
             words3.className= imageTxt[19].className;
@@ -157,6 +169,10 @@ function showImage(index){
             break;
         case 8:
             //Left PAge
+            arrowR.onclick = function(){nextImage()};
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            carousel.style.border = "2px solid #2F0000";
             words.className= imageTxt[24].className;
             words2.className= imageTxt[25].className;
             words3.className= imageTxt[26].className;
@@ -175,6 +191,9 @@ function showImage(index){
             arrowR.onclick = function(){
                 window.open('shoal-end.html', '_parent');
             }
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            carousel.style.border = "2px solid #2F0000";
             words.className= imageTxt[30].className;
             words2.className= imageTxt[31].className;
             words3.className= imageTxt[32].className;
@@ -216,6 +235,14 @@ function prevImage(){
     
 }
 
+function showSelected(){
+    resetSrcOp();
+    currentIndex= e.value % imageData.length;;
+    showImage(currentIndex);
+    showImage2(currentIndex);
+}
+
+
 function resetSrcOp(){
     words.style.opacity = 0;
     words2.style.opacity = 0;
@@ -256,3 +283,8 @@ function fadeInAnim(){
 
 showImage(currentIndex);
 showImage2(currentIndex);
+
+e.addEventListener('change', () => {
+    currentIndex = e.value;
+    showSelected();
+});

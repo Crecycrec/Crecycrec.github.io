@@ -27,6 +27,7 @@ const carousel2 = document.getElementById("carousel2");
 const words = document.getElementById("words");
 var arrowL = document.getElementById("al");
 var arrowR = document.getElementById("ar");
+const e = document.getElementById("pagenum");
 
 function unfade(element) {
     var op = 0.1;  // initial opacity
@@ -49,6 +50,7 @@ function showImage(index){
 
     // //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
     // resetSrcOp();
+    e.value = currentIndex;
 
     //just fades in all the text everytime even if it is empty.
     fadeInAnim();
@@ -92,6 +94,13 @@ function prevImage(){
     
 }
 
+function showSelected(){
+    resetSrcOp();
+    currentIndex= e.value % imageData.length;;
+    showImage(currentIndex);
+    showImage2(currentIndex);
+}
+
 function resetSrcOp(){
     words.setAttribute('src', '');
     words.style.opacity = 0;
@@ -103,3 +112,8 @@ function fadeInAnim(){
 
 showImage(currentIndex);
 showImage2(currentIndex);
+
+e.addEventListener('change', () => {
+    currentIndex = e.value;
+    showSelected();
+});

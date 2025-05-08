@@ -39,6 +39,7 @@ const words2 = document.getElementById("words2");
 const words3 = document.getElementById("words3");
 var arrowL = document.getElementById("al");
 var arrowR = document.getElementById("ar");
+const e = document.getElementById("pagenum");
 
 function unfade(element) {
     var op = 0.1;  // initial opacity
@@ -61,6 +62,7 @@ function showImage(index){
 
     // //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
     // resetSrcOp();
+    e.value = currentIndex;
 
     //just fades in all the text everytime even if it is empty.
     fadeInAnim();
@@ -69,6 +71,7 @@ function showImage(index){
         case 0:
             arrowL.setAttribute('disabled', true);
             arrowL.style.opacity = 0;
+            arrowR.onclick = function(){nextImage()};
             words.className= imageTxt[0].className;
             words2.className= imageTxt[1].className;
             words3.className= imageTxt[2].className;
@@ -79,6 +82,7 @@ function showImage(index){
         case 2:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className= imageTxt[3].className;
             words2.className= imageTxt[4].className;
             words.src = `angler/anglertxt-${imageTxt[3].id}.png`;
@@ -86,6 +90,9 @@ function showImage(index){
             break;
         case 4:
             //Left Page
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className= imageTxt[5].className;
             words2.className= imageTxt[6].className;
             words.src = `angler/anglertxt-${imageTxt[5].id}.png`;
@@ -93,24 +100,37 @@ function showImage(index){
             break;
         case 6:
             //Left Page
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className= imageTxt[7].className;
             words.src = `angler/anglertxt-${imageTxt[7].id}.png`;
             break;
         case 8:
             //Left PAge
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className= imageTxt[8].className;
             words.src = `angler/anglertxt-${imageTxt[8].id}.png`;
             break;
         case 10:
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className= imageTxt[9].className;
             words.src = `angler/anglertxt-${imageTxt[9].id}.png`;
             break;
         case 12:
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
             arrowR.onclick = function(){nextImage()};
             words.className= imageTxt[10].className;
             words.src = `angler/anglertxt-${imageTxt[10].id}.png`;
             break;
         case 14:
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
             arrowR.onclick = function(){
                 window.open('angler-end.html', '_parent');
             }
@@ -147,6 +167,13 @@ function prevImage(){
     
 }
 
+function showSelected(){
+    resetSrcOp();
+    currentIndex= e.value % imageData.length;;
+    showImage(currentIndex);
+    showImage2(currentIndex);
+}
+
 function resetSrcOp(){
     words.setAttribute('src', '');
     words2.setAttribute('src', '');
@@ -166,3 +193,8 @@ function fadeInAnim(){
 
 showImage(currentIndex);
 showImage2(currentIndex);
+
+e.addEventListener('change', () => {
+    currentIndex = e.value;
+    showSelected();
+});

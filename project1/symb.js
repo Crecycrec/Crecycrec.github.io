@@ -77,6 +77,7 @@ const words15 = document.getElementById("words15");
 const words16 = document.getElementById("words16");
 var arrowL = document.getElementById("al");
 var arrowR = document.getElementById("ar");
+const e = document.getElementById("pagenum");
 
 function unfade(element) {
     var op = 0.1;  // initial opacity
@@ -99,6 +100,7 @@ function showImage(index){
 
     // //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
     resetSrcOp();
+    e.value = currentIndex;
 
     //just fades in all the text everytime even if it is empty.
     fadeInAnim();
@@ -120,7 +122,7 @@ function showImage(index){
         case 2:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            carousel.style.border = "2px solid #2F0000";
+            arrowR.onclick = function(){nextImage()};
             words.className= imageTxt[4].className;
             words2.className= imageTxt[5].className;
             words3.className= imageTxt[6].className;
@@ -156,6 +158,9 @@ function showImage(index){
             break;
         case 4:
             //Left Page
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className= imageTxt[20].className;
             words2.className= imageTxt[21].className;
             words3.className= imageTxt[22].className;
@@ -178,6 +183,9 @@ function showImage(index){
             words10.src = `symbiosis/symtxt-${imageTxt[29].id}.png`;
             break;
         case 6:
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
+            arrowR.onclick = function(){nextImage()};
             words.className= imageTxt[30].className;
             words2.className= imageTxt[31].className;
             words.src = `symbiosis/symtxt-${imageTxt[30].id}.png`;
@@ -185,6 +193,8 @@ function showImage(index){
             break;
         case 8:
             //Left PAge
+            arrowL.removeAttribute('disabled');
+            arrowL.style.opacity = 1;
             words.className= imageTxt[32].className;
             words2.className= imageTxt[33].className;
             words3.className= imageTxt[34].className;
@@ -239,6 +249,14 @@ function prevImage(){
     showImage2(currentIndex);
     
 }
+
+function showSelected(){
+    resetSrcOp();
+    currentIndex= e.value % imageData.length;;
+    showImage(currentIndex);
+    showImage2(currentIndex);
+}
+
 
 function resetSrcOp(){
     words.style.opacity = 0;
@@ -298,3 +316,8 @@ function fadeInAnim(){
 
 showImage(currentIndex);
 showImage2(currentIndex);
+
+e.addEventListener('change', () => {
+    currentIndex = e.value;
+    showSelected();
+});
