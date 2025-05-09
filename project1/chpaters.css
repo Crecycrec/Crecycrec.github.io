@@ -253,11 +253,6 @@ body{
     background: none;
     transition: 0.2ms;
 }
-
-.btn{
-    background-color: none;
-}
-
 .toggleDark{
     background-color: rgb(32, 32, 32);
 

@@ -101,6 +101,12 @@ function showSelected(){
     showImage2(currentIndex);
 }
 
+function toggleDark() {
+    var element = document.body;
+    element.classList.toggle("toggleDark");
+ }
+
+
 function resetSrcOp(){
     words.setAttribute('src', '');
     words.style.opacity = 0;
