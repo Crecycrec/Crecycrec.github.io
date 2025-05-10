@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CLOXE: Overflow</title>
-    <link rel="icon" href="assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="chpaters.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CLOXE: Overflow</title>
+   <link rel="icon" href="assets/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="chpaters.css">
 </head>
+
 <body class="chapt1">
-      <header>
-         <a href="cloxe.html"> <img id="logoimg" src="assets/logo.png"> </a>
-         <button type="button" class="btn btn-default btn-sm" onclick="toggleDark()"><span class="glyphicon glyphicon-adjust"></span></button>
-         <div class=" dropdown">
-            Page: <select name="pages" id="pagenum" class="">
-               <option value = "0" >0-1</option>
-               <option value = "2" >2-3</option>
-               <option value = "4" >4-5</option>
-               <option value = "6" >6-7</option>
-               <option value = "8" >8-9</option>
-               <option value = "10" >10-11</option>
-               <option value = "12" >12-13</option>
-               <option value = "14" >14-end</option>
-   
-            </select>
-         </div>
-          <!--Add in icon for -->
-         <!-- Add In a cacading drop down menu -->
-      </header>
-    <!-- Overall container for the images itself  -->
-     <div class="carousel-cont" id="carouselCont">
+   <header>
+      <a href="cloxe.html"> <img id="logoimg" src="assets/logo.png"> </a>
+      <button type="button" class="btn btn-default btn-sm" onclick="toggleDark()"><span
+            class="glyphicon glyphicon-adjust"></span></button>
+      <div class=" dropdown">
+         Page: <select name="pages" id="pagenum" class="">
+            <option value="0">0-1</option>
+            <option value="2">2-3</option>
+            <option value="4">4-5</option>
+            <option value="6">6-7</option>
+            <option value="8">8-9</option>
+            <option value="10">10-11</option>
+            <option value="12">12-13</option>
+            <option value="14">14-end</option>
 
-        <!-- Left Arrow button to go to prev pg -->
-        <button id = "al" class="arrow arrow-left" onClick="prevImage()">❮</button>
+         </select>
+      </div>
+      <!--Add in icon for -->
+      <!-- Add In a cacading drop down menu -->
+   </header>
+   <!-- Overall container for the images itself  -->
+   <div class="carousel-cont" id="carouselCont">
 
-        <!-- Carousell of all the spreads that is the base images. -->
-        <img id="carousel" class="" src="" alt="Carousel Image">
-        <img id="carousel2" class="" src="" alt="Carousel Image">
-        
-        <!-- Right arrow button to go to the next two pages -->
-        <button id = "ar" class="arrow arrow-right" onclick="nextImage()">❯</button>
+      <!-- Left Arrow button to go to prev pg -->
+      <button id="al" class="arrow arrow-left" onClick="prevImage()">❮</button>
 
-     </div>
+      <!-- Carousell of all the spreads that is the base images. -->
+      <img id="carousel" class="" src="" alt="Carousel Image">
+      <img id="carousel2" class="" src="" alt="Carousel Image">
 
-     <!-- img tag for all the word images that will be used for the pages. -->
-     <img id="words" src="" class="" alt="">
-     <img id="words2" src="" class="" alt="">
-     <img id="words3" src="" class="" alt="">
-     <img id="words4" src="" class="" alt="">
-     <img id="words5" src="" class="" alt="">
-     <img id="words6" src="" class="" alt="">
-     <img id="words7" src="" class="" alt="">
-     <img id="words8" src="" class="" alt="">
-     <img id="words9" src="" class="" alt="">
+      <!-- Right arrow button to go to the next two pages -->
+      <button id="ar" class="arrow arrow-right" onclick="nextImage()">❯</button>
 
-     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-     <script src="overflow.js">
-      
-     </script>
+   </div>
+
+   <!-- img tag for all the word images that will be used for the pages. -->
+   <img id="words" src="" class="" alt="">
+   <img id="words2" src="" class="" alt="">
+   <img id="words3" src="" class="" alt="">
+   <img id="words4" src="" class="" alt="">
+   <img id="words5" src="" class="" alt="">
+   <img id="words6" src="" class="" alt="">
+   <img id="words7" src="" class="" alt="">
+   <img id="words8" src="" class="" alt="">
+   <img id="words9" src="" class="" alt="">
+
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script src="overflow.js">
+
+   </script>
 </body>
+
 </html>

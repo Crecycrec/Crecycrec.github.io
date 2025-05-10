@@ -1,55 +1,55 @@
-const imageData =[
-    {id: "0", className: "txtr", alt: ""},
-    {id: "1", className: "txtl", alt: ""},
-    {id: "2", className: "txtl", alt: ""},
-    {id: "3", className: "txtr", alt: ""},
-    {id: "4", className: "", alt: ""},
-    {id: "5", className: "", alt: ""},
-    {id: "6", className: "", alt: ""},
-    {id: "7", className: "", alt: ""},
-    {id: "8", className: "", alt: ""},
-    {id: "9", className: "", alt: ""},
-    {id: "10", className: "", alt: ""},
-    {id: "11", className: "", alt: ""},
-    {id: "12", className: "", alt: ""},
-    {id: "13", className: "", alt: ""},
-    {id: "14", className: "", alt: ""},
-    {id: "15", className: "", alt: ""}
+const imageData = [
+    { id: "0", className: "txtr", alt: "" },
+    { id: "1", className: "txtl", alt: "" },
+    { id: "2", className: "txtl", alt: "" },
+    { id: "3", className: "txtr", alt: "" },
+    { id: "4", className: "", alt: "" },
+    { id: "5", className: "", alt: "" },
+    { id: "6", className: "", alt: "" },
+    { id: "7", className: "", alt: "" },
+    { id: "8", className: "", alt: "" },
+    { id: "9", className: "", alt: "" },
+    { id: "10", className: "", alt: "" },
+    { id: "11", className: "", alt: "" },
+    { id: "12", className: "", alt: "" },
+    { id: "13", className: "", alt: "" },
+    { id: "14", className: "", alt: "" },
+    { id: "15", className: "", alt: "" }
 ];
 
-const imageTxt =[
-    {id: "0", className: "", alt: ""},
-    {id: "1", className: "ovTitle", alt: ""},
-    {id: "2", className: "", alt: ""},
-    {id: "3", className: "", alt: ""},
-    {id: "4", className: "", alt: ""},
-    {id: "5", className: "", alt: ""},
-    {id: "6", className: "pg4R", alt: ""},
-    {id: "7", className: "pg4R2", alt: ""},
-    {id: "8", className: "pg5L1", alt: ""},
-    {id: "9", className: "pg5L2", alt: ""},
-    {id: "10", className: "pg5L3", alt: ""},
-    {id: "11", className: "pg6R1", alt: ""},
-    {id: "12", className: "pg6R2", alt: ""},
-    {id: "13", className: "pg6R3", alt: ""},
-    {id: "14", className: "pg6R4", alt: ""},
-    {id: "15", className: "pg7L1", alt: ""},
-    {id: "16", className: "pg7L2", alt: ""},
-    {id: "17", className: "pg8R1", alt: ""},
-    {id: "18", className: "pg9L1", alt: ""},
-    {id: "19", className: "pg9L2", alt: ""},
-    {id: "20", className: "pg9L3", alt: ""},
-    {id: "21", className: "pg10R1", alt: ""},
-    {id: "22", className: "pg12R1", alt: ""},
-    {id: "23", className: "pg13L1", alt: ""},
-    {id: "24", className: "pg13L2", alt: ""},
-    {id: "25", className: "pg13L3", alt: ""},
-    {id: "26", className: "pg13L4", alt: ""},
-    {id: "27", className: "pg13L5", alt: ""},
-    {id: "28", className: "pg14R1", alt: ""},
-    {id: "29", className: "pg14R2", alt: ""},
-    {id: "30", className: "pg15L1", alt: ""},
-    {id: "31", className: "pg15L2", alt: ""}
+const imageTxt = [
+    { id: "0", className: "", alt: "" },
+    { id: "1", className: "ovTitle", alt: "" },
+    { id: "2", className: "", alt: "" },
+    { id: "3", className: "", alt: "" },
+    { id: "4", className: "", alt: "" },
+    { id: "5", className: "", alt: "" },
+    { id: "6", className: "pg4R", alt: "" },
+    { id: "7", className: "pg4R2", alt: "" },
+    { id: "8", className: "pg5L1", alt: "" },
+    { id: "9", className: "pg5L2", alt: "" },
+    { id: "10", className: "pg5L3", alt: "" },
+    { id: "11", className: "pg6R1", alt: "" },
+    { id: "12", className: "pg6R2", alt: "" },
+    { id: "13", className: "pg6R3", alt: "" },
+    { id: "14", className: "pg6R4", alt: "" },
+    { id: "15", className: "pg7L1", alt: "" },
+    { id: "16", className: "pg7L2", alt: "" },
+    { id: "17", className: "pg8R1", alt: "" },
+    { id: "18", className: "pg9L1", alt: "" },
+    { id: "19", className: "pg9L2", alt: "" },
+    { id: "20", className: "pg9L3", alt: "" },
+    { id: "21", className: "pg10R1", alt: "" },
+    { id: "22", className: "pg12R1", alt: "" },
+    { id: "23", className: "pg13L1", alt: "" },
+    { id: "24", className: "pg13L2", alt: "" },
+    { id: "25", className: "pg13L3", alt: "" },
+    { id: "26", className: "pg13L4", alt: "" },
+    { id: "27", className: "pg13L5", alt: "" },
+    { id: "28", className: "pg14R1", alt: "" },
+    { id: "29", className: "pg14R2", alt: "" },
+    { id: "30", className: "pg15L1", alt: "" },
+    { id: "31", className: "pg15L2", alt: "" }
 ];
 
 let currentIndex = 0;
@@ -72,7 +72,7 @@ function unfade(element) {
     var op = 0.1;  // initial opacity
     element.style.display = 'block';
     var timer = setInterval(function () {
-        if (op >= 1){
+        if (op >= 1) {
             clearInterval(timer);
         }
         element.style.opacity = op;
@@ -82,7 +82,7 @@ function unfade(element) {
 }
 
 //Functions that shows the new image in the carousel.
-function showImage(index){
+function showImage(index) {
     carousel.style.opacity = 1;
     carousel.src = `overflow/Overflow-${imageData[index].id}.png`;
     carousel.alt = imageData[index].alt;
@@ -94,37 +94,37 @@ function showImage(index){
     fadeInAnim();
     e.value = currentIndex;
 
-    switch(currentIndex){
+    switch (currentIndex) {
         case 0:
             arrowL.setAttribute('disabled', true);
             arrowL.style.opacity = 0;
-            arrowR.onclick = function(){nextImage()};
-            words.className= imageTxt[1].className;
+            arrowR.onclick = function () { nextImage() };
+            words.className = imageTxt[1].className;
             words.src = `overflow/Overflowtxt-${imageTxt[1].id}.png`;
             break;
         case 2:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
-            words.className= imageData[index].className;
-            words2.className= imageData[index].className;
-            words3.className= imageData[index].className;
-            words4.className= imageData[index].className;
+            arrowR.onclick = function () { nextImage() };
+            words.className = imageData[index].className;
+            words2.className = imageData[index].className;
+            words3.className = imageData[index].className;
+            words4.className = imageData[index].className;
             words.src = `overflow/Overflowtxt-${imageTxt[2].id}.png`;
             words2.src = `overflow/Overflowtxt-${imageTxt[3].id}.png`;
             words3.src = `overflow/Overflowtxt-${imageTxt[4].id}.png`;
             words4.src = `overflow/Overflowtxt-${imageTxt[5].id}.png`;
 
             // Right page
-            words5.className= imageTxt[6].className;
-            words6.className= imageTxt[7].className;
+            words5.className = imageTxt[6].className;
+            words6.className = imageTxt[7].className;
             words5.src = `overflow/Overflowtxt-${imageTxt[6].id}.png`;
             words6.src = `overflow/Overflowtxt-${imageTxt[7].id}.png`;
             break;
         case 4:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
+            arrowR.onclick = function () { nextImage() };
             //Left Page
             words.className = imageTxt[8].className;
             words2.className = imageTxt[9].className;
@@ -147,7 +147,7 @@ function showImage(index){
             //Left Page
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
+            arrowR.onclick = function () { nextImage() };
             words.className = imageTxt[15].className;
             words2.className = imageTxt[16].className;
             words3.className = imageTxt[17].className;
@@ -159,7 +159,7 @@ function showImage(index){
             //Left PAge
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
+            arrowR.onclick = function () { nextImage() };
             words.className = imageTxt[18].className;
             words2.className = imageTxt[19].className;
             words3.className = imageTxt[20].className;
@@ -174,7 +174,7 @@ function showImage(index){
         case 10:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
+            arrowR.onclick = function () { nextImage() };
             words.className = imageTxt[22].className;
             words.src = `overflow/Overflowtxt-${imageTxt[22].id}.png`;
             break;
@@ -182,7 +182,7 @@ function showImage(index){
             // Left Page
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
+            arrowR.onclick = function () { nextImage() };
             words.className = imageTxt[23].className;
             words2.className = imageTxt[24].className;
             words3.className = imageTxt[25].className;
@@ -199,18 +199,18 @@ function showImage(index){
             words7.className = imageTxt[29].className;
             words6.src = `overflow/Overflowtxt-${imageTxt[28].id}.png`;
             words7.src = `overflow/Overflowtxt-${imageTxt[29].id}.png`;
-            arrowR.onclick = function(){nextImage()};
+            arrowR.onclick = function () { nextImage() };
             break;
         case 14:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
+            arrowR.onclick = function () { nextImage() };
             words.className = imageTxt[30].className;
             words2.className = imageTxt[31].className;
             words.src = `overflow/Overflowtxt-${imageTxt[30].id}.png`;
             words2.src = `overflow/Overflowtxt-${imageTxt[31].id}.png`;
 
-            arrowR.onclick = function(){
+            arrowR.onclick = function () {
                 window.open('overflow-end.html', '_parent');
             }
             break;
@@ -218,37 +218,37 @@ function showImage(index){
             //I don't think I need this but I have it hear out of my own paranoia
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
-            // break;
+            arrowR.onclick = function () { nextImage() };
+        // break;
     }
 }
 
-function showImage2(index){
+function showImage2(index) {
     carousel2.style.opacity = 1;
-    carousel2.src = `overflow/Overflow-${imageData[index+1].id}.png`;
-    carousel2.alt = imageData[index+1].alt;
+    carousel2.src = `overflow/Overflow-${imageData[index + 1].id}.png`;
+    carousel2.alt = imageData[index + 1].alt;
     // words.className= imageData[index+1].className;
 }
 
-function nextImage(){
+function nextImage() {
     //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
     resetSrcOp();
-    currentIndex= (currentIndex+2) % imageData.length;
+    currentIndex = (currentIndex + 2) % imageData.length;
     showImage(currentIndex);
     showImage2(currentIndex);
 }
-function prevImage(){
+function prevImage() {
     //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
     resetSrcOp();
-    currentIndex=(currentIndex-2+imageData.length) % imageData.length;
+    currentIndex = (currentIndex - 2 + imageData.length) % imageData.length;
     showImage(currentIndex);
     showImage2(currentIndex);
-    
+
 }
 
-function showSelected(){
+function showSelected() {
     resetSrcOp();
-    currentIndex= e.value % imageData.length;;
+    currentIndex = e.value % imageData.length;;
     showImage(currentIndex);
     showImage2(currentIndex);
 }
@@ -256,9 +256,9 @@ function showSelected(){
 function toggleDark() {
     var element = document.body;
     element.classList.toggle("toggleDark");
- }
+}
 
-function resetSrcOp(){
+function resetSrcOp() {
     words.setAttribute('src', '');
     words2.setAttribute('src', '');
     words3.setAttribute('src', '');
@@ -280,16 +280,16 @@ function resetSrcOp(){
     words9.style.opacity = 0;
 }
 
-function fadeInAnim(){
+function fadeInAnim() {
     unfade(words);
-    setTimeout(() => {unfade(words2);}, 400);
-    setTimeout(() => {unfade(words3);}, 800);
-    setTimeout(() => {unfade(words4);}, 1200);
-    setTimeout(() => {unfade(words5);}, 1600);
-    setTimeout(() => {unfade(words6);}, 2000);
-    setTimeout(() => {unfade(words7);}, 2400);
-    setTimeout(() => {unfade(words8);}, 2800);
-    setTimeout(() => {unfade(words9);}, 3200);
+    setTimeout(() => { unfade(words2); }, 400);
+    setTimeout(() => { unfade(words3); }, 800);
+    setTimeout(() => { unfade(words4); }, 1200);
+    setTimeout(() => { unfade(words5); }, 1600);
+    setTimeout(() => { unfade(words6); }, 2000);
+    setTimeout(() => { unfade(words7); }, 2400);
+    setTimeout(() => { unfade(words8); }, 2800);
+    setTimeout(() => { unfade(words9); }, 3200);
 }
 
 showImage(currentIndex);

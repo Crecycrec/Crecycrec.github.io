@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Cloxe: Angler</title>
     <link rel="stylesheet" href="angler.css">
 </head>
+
 <body>
     <header>
         <a href="cloxe.html"> <img id="logoimg" src="assets/logo.png"> </a> <!--Add in icon for -->
-        
+        <button type="button" class="btn btn-default btn-sm" onclick="toggleDark()"><span
+                class="glyphicon glyphicon-adjust"></span></button>
+
         <div class=" dropdown">
             Page: <select name="pages" id="pagenum" class="">
-               <option value = "0" >0-1</option>
-               <option value = "2" >2-3</option>
-               <option value = "4" >4-5</option>
-               <option value = "6" >6-7</option>
-               <option value = "8" >8-9</option>
-               <option value = "10" >10-11</option>
-               <option value = "12" >12-13</option>
-               <option value = "14" >14-end</option>
-   
+                <option value="0">0-1</option>
+                <option value="2">2-3</option>
+                <option value="4">4-5</option>
+                <option value="6">6-7</option>
+                <option value="8">8-9</option>
+                <option value="10">10-11</option>
+                <option value="12">12-13</option>
+                <option value="14">14-end</option>
+
             </select>
-         </div>
-     </header>
-   <!-- Overall container for the images itself  -->
+        </div>
+    </header>
+    <!-- Overall container for the images itself  -->
     <div class="carousel-cont" id="carouselCont">
 
-       <!-- Left Arrow button to go to prev pg -->
-       <button id = "al" class="arrow arrow-left" onClick="prevImage()">❮</button>
+        <!-- Left Arrow button to go to prev pg -->
+        <button id="al" class="arrow arrow-left" onClick="prevImage()">❮</button>
 
-       <!-- Carousell of all the spreads that is the base images. -->
-       <img id="carousel" class="" src="" alt="Carousel Image">
-       <img id="carousel2" class="" src="" alt="Carousel Image">
-       
-       <!-- Right arrow button to go to the next two pages -->
-       <button id = "ar" class="arrow arrow-right" onclick="nextImage()">❯</button>
+        <!-- Carousell of all the spreads that is the base images. -->
+        <img id="carousel" class="" src="" alt="Carousel Image">
+        <img id="carousel2" class="" src="" alt="Carousel Image">
+
+        <!-- Right arrow button to go to the next two pages -->
+        <button id="ar" class="arrow arrow-right" onclick="nextImage()">❯</button>
 
     </div>
 
@@ -44,9 +49,11 @@
     <img id="words2" src="" class="" alt="">
     <img id="words3" src="" class="" alt="">
 
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="angler.js">
-     
+
     </script>
 </body>
+
 </html>

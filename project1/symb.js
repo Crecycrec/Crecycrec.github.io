@@ -1,59 +1,59 @@
-const imageData =[
-    {id: "0", className: "", alt: ""},
-    {id: "1", className: "", alt: ""},
-    {id: "2", className: "", alt: ""},
-    {id: "3", className: "", alt: ""},
-    {id: "4", className: "", alt: ""},
-    {id: "5", className: "", alt: ""},
-    {id: "6", className: "", alt: ""},
-    {id: "7", className: "", alt: ""},
-    {id: "8", className: "", alt: ""},
-    {id: "9", className: "", alt: ""},
-    {id: "10", className: "", alt: ""},
-    {id: "11", className: "", alt: ""}
+const imageData = [
+    { id: "0", className: "", alt: "" },
+    { id: "1", className: "", alt: "" },
+    { id: "2", className: "", alt: "" },
+    { id: "3", className: "", alt: "" },
+    { id: "4", className: "", alt: "" },
+    { id: "5", className: "", alt: "" },
+    { id: "6", className: "", alt: "" },
+    { id: "7", className: "", alt: "" },
+    { id: "8", className: "", alt: "" },
+    { id: "9", className: "", alt: "" },
+    { id: "10", className: "", alt: "" },
+    { id: "11", className: "", alt: "" }
 ];
 
-const imageTxt =[
-    {id: "0", className: "symtitle", alt: ""},
-    {id: "1", className: "symtitle2", alt: ""},
-    {id: "2", className: "pg1R1", alt: ""},
-    {id: "3", className: "pg1R2", alt: ""},
-    {id: "4", className: "pg2L1", alt: ""},
-    {id: "5", className: "pg2L2", alt: ""},
-    {id: "6", className: "pg2L3", alt: ""},
-    {id: "7", className: "pg2L4", alt: ""},
-    {id: "8", className: "pg2L5", alt: ""},
-    {id: "9", className: "pg2L6", alt: ""},
-    {id: "10", className: "pg2L7", alt: ""},
-    {id: "11", className: "pg2L8", alt: ""},
-    {id: "12", className: "pg3R1", alt: ""},
-    {id: "13", className: "pg3R2", alt: ""},
-    {id: "14", className: "pg3R3", alt: ""},
-    {id: "15", className: "pg3R4", alt: ""},
-    {id: "16", className: "pg3R5", alt: ""},
-    {id: "17", className: "pg3R6", alt: ""},
-    {id: "18", className: "pg3R7", alt: ""},
-    {id: "19", className: "pg3R8", alt: ""},
-    {id: "20", className: "pg4L1", alt: ""},
-    {id: "21", className: "pg4L2", alt: ""},
-    {id: "22", className: "pg4L3", alt: ""},
-    {id: "23", className: "pg4L4", alt: ""},
-    {id: "24", className: "pg4L5", alt: ""},
-    {id: "25", className: "pg5R1", alt: ""},
-    {id: "26", className: "pg5R2", alt: ""},
-    {id: "27", className: "pg5R3", alt: ""},
-    {id: "28", className: "pg5R4", alt: ""},
-    {id: "29", className: "pg5R5", alt: ""},
-    {id: "30", className: "pg6L1", alt: ""},
-    {id: "31", className: "pg7R1", alt: ""},
-    {id: "32", className: "pg8L1", alt: ""},
-    {id: "33", className: "pg8L2", alt: ""},
-    {id: "34", className: "pg8L3", alt: ""},
-    {id: "35", className: "pg9R1", alt: ""},
-    {id: "36", className: "pg9R2", alt: ""},
-    {id: "37", className: "pg9R3", alt: ""},
-    {id: "38", className: "pg10L1", alt: ""},
-    {id: "39", className: "pg11R1", alt: ""}
+const imageTxt = [
+    { id: "0", className: "symtitle", alt: "" },
+    { id: "1", className: "symtitle2", alt: "" },
+    { id: "2", className: "pg1R1", alt: "" },
+    { id: "3", className: "pg1R2", alt: "" },
+    { id: "4", className: "pg2L1", alt: "" },
+    { id: "5", className: "pg2L2", alt: "" },
+    { id: "6", className: "pg2L3", alt: "" },
+    { id: "7", className: "pg2L4", alt: "" },
+    { id: "8", className: "pg2L5", alt: "" },
+    { id: "9", className: "pg2L6", alt: "" },
+    { id: "10", className: "pg2L7", alt: "" },
+    { id: "11", className: "pg2L8", alt: "" },
+    { id: "12", className: "pg3R1", alt: "" },
+    { id: "13", className: "pg3R2", alt: "" },
+    { id: "14", className: "pg3R3", alt: "" },
+    { id: "15", className: "pg3R4", alt: "" },
+    { id: "16", className: "pg3R5", alt: "" },
+    { id: "17", className: "pg3R6", alt: "" },
+    { id: "18", className: "pg3R7", alt: "" },
+    { id: "19", className: "pg3R8", alt: "" },
+    { id: "20", className: "pg4L1", alt: "" },
+    { id: "21", className: "pg4L2", alt: "" },
+    { id: "22", className: "pg4L3", alt: "" },
+    { id: "23", className: "pg4L4", alt: "" },
+    { id: "24", className: "pg4L5", alt: "" },
+    { id: "25", className: "pg5R1", alt: "" },
+    { id: "26", className: "pg5R2", alt: "" },
+    { id: "27", className: "pg5R3", alt: "" },
+    { id: "28", className: "pg5R4", alt: "" },
+    { id: "29", className: "pg5R5", alt: "" },
+    { id: "30", className: "pg6L1", alt: "" },
+    { id: "31", className: "pg7R1", alt: "" },
+    { id: "32", className: "pg8L1", alt: "" },
+    { id: "33", className: "pg8L2", alt: "" },
+    { id: "34", className: "pg8L3", alt: "" },
+    { id: "35", className: "pg9R1", alt: "" },
+    { id: "36", className: "pg9R2", alt: "" },
+    { id: "37", className: "pg9R3", alt: "" },
+    { id: "38", className: "pg10L1", alt: "" },
+    { id: "39", className: "pg11R1", alt: "" }
 ];
 
 let currentIndex = 0;
@@ -83,7 +83,7 @@ function unfade(element) {
     var op = 0.1;  // initial opacity
     element.style.display = 'block';
     var timer = setInterval(function () {
-        if (op >= 1){
+        if (op >= 1) {
             clearInterval(timer);
         }
         element.style.opacity = op;
@@ -93,7 +93,7 @@ function unfade(element) {
 }
 
 //Functions that shows the new image in the carousel.
-function showImage(index){
+function showImage(index) {
     carousel.style.opacity = 1;
     carousel.src = `symbiosis/symbiosis-${imageData[index].id}.png`;
     carousel.alt = imageData[index].alt;
@@ -105,15 +105,15 @@ function showImage(index){
     //just fades in all the text everytime even if it is empty.
     fadeInAnim();
 
-    switch(currentIndex){
+    switch (currentIndex) {
         case 0:
             arrowL.setAttribute('disabled', true);
             arrowL.style.opacity = 0;
             // carousel.style.border = 0;
-            words.className= imageTxt[0].className;
-            words2.className= imageTxt[1].className;
-            words3.className= imageTxt[2].className;
-            words4.className= imageTxt[3].className;
+            words.className = imageTxt[0].className;
+            words2.className = imageTxt[1].className;
+            words3.className = imageTxt[2].className;
+            words4.className = imageTxt[3].className;
             words.src = `symbiosis/symtxt-${imageTxt[0].id}.png`;
             words2.src = `symbiosis/symtxt-${imageTxt[1].id}.png`;
             words3.src = `symbiosis/symtxt-${imageTxt[2].id}.png`;
@@ -122,23 +122,23 @@ function showImage(index){
         case 2:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
-            words.className= imageTxt[4].className;
-            words2.className= imageTxt[5].className;
-            words3.className= imageTxt[6].className;
-            words4.className= imageTxt[7].className;
-            words5.className= imageTxt[8].className;
-            words6.className= imageTxt[9].className;
-            words7.className= imageTxt[10].className;
-            words8.className= imageTxt[11].className;
-            words9.className= imageTxt[12].className;
-            words10.className= imageTxt[13].className;
-            words11.className= imageTxt[14].className;
-            words12.className= imageTxt[15].className;
-            words13.className= imageTxt[16].className;
-            words14.className= imageTxt[17].className;
-            words15.className= imageTxt[18].className;
-            words16.className= imageTxt[19].className;
+            arrowR.onclick = function () { nextImage() };
+            words.className = imageTxt[4].className;
+            words2.className = imageTxt[5].className;
+            words3.className = imageTxt[6].className;
+            words4.className = imageTxt[7].className;
+            words5.className = imageTxt[8].className;
+            words6.className = imageTxt[9].className;
+            words7.className = imageTxt[10].className;
+            words8.className = imageTxt[11].className;
+            words9.className = imageTxt[12].className;
+            words10.className = imageTxt[13].className;
+            words11.className = imageTxt[14].className;
+            words12.className = imageTxt[15].className;
+            words13.className = imageTxt[16].className;
+            words14.className = imageTxt[17].className;
+            words15.className = imageTxt[18].className;
+            words16.className = imageTxt[19].className;
             words.src = `symbiosis/symtxt-${imageTxt[4].id}.png`;
             words2.src = `symbiosis/symtxt-${imageTxt[5].id}.png`;
             words3.src = `symbiosis/symtxt-${imageTxt[6].id}.png`;
@@ -160,17 +160,17 @@ function showImage(index){
             //Left Page
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
-            words.className= imageTxt[20].className;
-            words2.className= imageTxt[21].className;
-            words3.className= imageTxt[22].className;
-            words4.className= imageTxt[23].className;
-            words5.className= imageTxt[24].className;
-            words6.className= imageTxt[25].className;
-            words7.className= imageTxt[26].className;
-            words8.className= imageTxt[27].className;
-            words9.className= imageTxt[28].className;
-            words10.className= imageTxt[29].className;
+            arrowR.onclick = function () { nextImage() };
+            words.className = imageTxt[20].className;
+            words2.className = imageTxt[21].className;
+            words3.className = imageTxt[22].className;
+            words4.className = imageTxt[23].className;
+            words5.className = imageTxt[24].className;
+            words6.className = imageTxt[25].className;
+            words7.className = imageTxt[26].className;
+            words8.className = imageTxt[27].className;
+            words9.className = imageTxt[28].className;
+            words10.className = imageTxt[29].className;
             words.src = `symbiosis/symtxt-${imageTxt[20].id}.png`;
             words2.src = `symbiosis/symtxt-${imageTxt[21].id}.png`;
             words3.src = `symbiosis/symtxt-${imageTxt[22].id}.png`;
@@ -185,9 +185,9 @@ function showImage(index){
         case 6:
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
-            words.className= imageTxt[30].className;
-            words2.className= imageTxt[31].className;
+            arrowR.onclick = function () { nextImage() };
+            words.className = imageTxt[30].className;
+            words2.className = imageTxt[31].className;
             words.src = `symbiosis/symtxt-${imageTxt[30].id}.png`;
             words2.src = `symbiosis/symtxt-${imageTxt[31].id}.png`;
             break;
@@ -195,26 +195,26 @@ function showImage(index){
             //Left PAge
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            words.className= imageTxt[32].className;
-            words2.className= imageTxt[33].className;
-            words3.className= imageTxt[34].className;
-            words4.className= imageTxt[35].className;
-            words5.className= imageTxt[36].className;
-            words6.className= imageTxt[37].className;
+            words.className = imageTxt[32].className;
+            words2.className = imageTxt[33].className;
+            words3.className = imageTxt[34].className;
+            words4.className = imageTxt[35].className;
+            words5.className = imageTxt[36].className;
+            words6.className = imageTxt[37].className;
             words.src = `symbiosis/symtxt-${imageTxt[32].id}.png`;
             words2.src = `symbiosis/symtxt-${imageTxt[33].id}.png`;
             words3.src = `symbiosis/symtxt-${imageTxt[34].id}.png`;
             words4.src = `symbiosis/symtxt-${imageTxt[35].id}.png`;
             words5.src = `symbiosis/symtxt-${imageTxt[36].id}.png`;
             words6.src = `symbiosis/symtxt-${imageTxt[37].id}.png`;
-            arrowR.onclick = function(){nextImage()};
+            arrowR.onclick = function () { nextImage() };
             break;
         case 10:
-            arrowR.onclick = function(){
+            arrowR.onclick = function () {
                 window.open('symbiosis-end.html', '_parent');
             }
-            words.className= imageTxt[38].className;
-            words2.className= imageTxt[39].className;
+            words.className = imageTxt[38].className;
+            words2.className = imageTxt[39].className;
             words.src = `symbiosis/symtxt-${imageTxt[38].id}.png`;
             words2.src = `symbiosis/symtxt-${imageTxt[39].id}.png`;
             break;
@@ -222,43 +222,48 @@ function showImage(index){
             //I don't think I need this but I have it hear out of my own paranoia
             arrowL.removeAttribute('disabled');
             arrowL.style.opacity = 1;
-            arrowR.onclick = function(){nextImage()};
-            // // break;
+            arrowR.onclick = function () { nextImage() };
+        // // break;
     }
 }
 
-function showImage2(index){
+function showImage2(index) {
     carousel2.style.opacity = 1;
-    carousel2.src = `symbiosis/symbiosis-${imageData[index+1].id}.png`;
-    carousel2.alt = imageData[index+1].alt;
+    carousel2.src = `symbiosis/symbiosis-${imageData[index + 1].id}.png`;
+    carousel2.alt = imageData[index + 1].alt;
     // words.className= imageData[index+1].className;
 }
 
-function nextImage(){
+function nextImage() {
     //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
     resetSrcOp();
-    currentIndex= (currentIndex+2) % imageData.length;
+    currentIndex = (currentIndex + 2) % imageData.length;
     showImage(currentIndex);
     showImage2(currentIndex);
 }
-function prevImage(){
+function prevImage() {
     //Resets all the 'src' tags and the opacity of the imgs on the images to nothing so the bg img doesn't stay if it is not replaced going back or forth.
     resetSrcOp();
-    currentIndex=(currentIndex-2+imageData.length) % imageData.length;
+    currentIndex = (currentIndex - 2 + imageData.length) % imageData.length;
     showImage(currentIndex);
     showImage2(currentIndex);
-    
+
+}
+function toggleDark() {
+    var element = document.body;
+    element.classList.toggle("toggleDark");
 }
 
-function showSelected(){
+
+function showSelected() {
     resetSrcOp();
-    currentIndex= e.value % imageData.length;;
+    currentIndex = e.value % imageData.length;;
     showImage(currentIndex);
     showImage2(currentIndex);
 }
 
 
-function resetSrcOp(){
+function resetSrcOp() {
     words.style.opacity = 0;
     words2.style.opacity = 0;
     words3.style.opacity = 0;
@@ -295,23 +300,23 @@ function resetSrcOp(){
     words16.setAttribute('src', '');
 }
 
-function fadeInAnim(){
+function fadeInAnim() {
     unfade(words);
-    setTimeout(() => {unfade(words2);}, 400);
-    setTimeout(() => {unfade(words3);}, 800);
-    setTimeout(() => {unfade(words4);}, 1200);
-    setTimeout(() => {unfade(words5);}, 1600);
-    setTimeout(() => {unfade(words6);}, 2000);
-    setTimeout(() => {unfade(words7);}, 2400);
-    setTimeout(() => {unfade(words8);}, 2800);
-    setTimeout(() => {unfade(words9);}, 3200);
-    setTimeout(() => {unfade(words10);}, 3600);
-    setTimeout(() => {unfade(words11);}, 4000);
-    setTimeout(() => {unfade(words12);}, 4400);
-    setTimeout(() => {unfade(words13);}, 4800);
-    setTimeout(() => {unfade(words14);}, 5200);
-    setTimeout(() => {unfade(words15);}, 5600);
-    setTimeout(() => {unfade(words16);}, 6000);
+    setTimeout(() => { unfade(words2); }, 400);
+    setTimeout(() => { unfade(words3); }, 800);
+    setTimeout(() => { unfade(words4); }, 1200);
+    setTimeout(() => { unfade(words5); }, 1600);
+    setTimeout(() => { unfade(words6); }, 2000);
+    setTimeout(() => { unfade(words7); }, 2400);
+    setTimeout(() => { unfade(words8); }, 2800);
+    setTimeout(() => { unfade(words9); }, 3200);
+    setTimeout(() => { unfade(words10); }, 3600);
+    setTimeout(() => { unfade(words11); }, 4000);
+    setTimeout(() => { unfade(words12); }, 4400);
+    setTimeout(() => { unfade(words13); }, 4800);
+    setTimeout(() => { unfade(words14); }, 5200);
+    setTimeout(() => { unfade(words15); }, 5600);
+    setTimeout(() => { unfade(words16); }, 6000);
 }
 
 showImage(currentIndex);

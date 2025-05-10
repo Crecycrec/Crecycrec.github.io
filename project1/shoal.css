@@ -1,16 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Kosugi+Maru&display=swap');
 
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     margin: 0;
     font-family: "Kosugi Maru", sans-serif;
     color: #2F0000;
     transition: 0.2s;
 }
-#logoimg{
+
+#logoimg {
     position: relative;
     top: 5px;
     left: 2%;
@@ -18,174 +19,213 @@ body{
     min-width: 70px;
 }
 
-#words, #words2, #words3, #words4, #words5, #words6, #words7, #words8, #words9, #words10{
+#words,
+#words2,
+#words3,
+#words4,
+#words5,
+#words6,
+#words7,
+#words8,
+#words9,
+#words10 {
     position: absolute;
     width: 38%;
     object-fit: cover;
-    
+
     z-index: 200;
     /* transition: opacity 0.5s; */
 }
 
-.txtr{
+.txtr {
     right: 12%;
     top: 3%;
-    
+
 }
 
-.pg2R1, .pg2R2{
+.pg2R1,
+.pg2R2 {
     right: 13%;
-    top: 10%; 
+    top: 10%;
 }
-.pg4R1{
+
+.pg4R1 {
     right: 12%;
-    top: 10%; 
+    top: 10%;
 }
-.pg4R2{
+
+.pg4R2 {
     right: 13%;
-    top: 10%; 
+    top: 10%;
 }
-.pg4R3{
+
+.pg4R3 {
     right: 13%;
-    top: 8%; 
+    top: 8%;
 }
-.pg6R1{
+
+.pg6R1 {
     right: 13%;
-    top: 8%; 
+    top: 8%;
 }
-.pg6R2{
+
+.pg6R2 {
     right: 12%;
-    top: 8%; 
+    top: 8%;
 }
-.pg6R3{
+
+.pg6R3 {
     right: 13%;
-    top: 8%; 
+    top: 8%;
 }
-.pg6R4{
+
+.pg6R4 {
     right: 12.5%;
-    top: 6%; 
+    top: 6%;
 }
-.pg8R1{
+
+.pg8R1 {
     right: 13%;
-    top: 10%; 
+    top: 10%;
 }
-.pg8R2{
+
+.pg8R2 {
     right: 12.5%;
-    top: 8%; 
+    top: 8%;
 }
-.pg8R3{
+
+.pg8R3 {
     right: 12.5%;
-    top: 6%; 
+    top: 6%;
 }
-.pg8R4{
+
+.pg8R4 {
     right: 12.5%;
-    top: 6%; 
+    top: 6%;
 }
-.pg8R5{
+
+.pg8R5 {
     right: 12.5%;
-    top: 6%; 
+    top: 6%;
 }
-.pg10R1{
+
+.pg10R1 {
     right: 13%;
-    top: 10%; 
+    top: 10%;
 }
 
 
-.shoaltitle{
+.shoaltitle {
     position: absolute;
     top: 10%;
     right: 13%;
-    
+
 }
 
-.pg1L1{
+.pg1L1 {
     top: 10%;
     left: 12.5%;
-    
+
 }
-.pg1L2{
+
+.pg1L2 {
     top: 8%;
     left: 13.5%;
-    
+
 }
-.pg1L3{
+
+.pg1L3 {
     top: 8%;
     left: 12.5%;
-    
+
 }
-.pg1L4{
+
+.pg1L4 {
     top: 8%;
     left: 13.5%;
-    
+
 }
-.pg3L1, .pg3L3{
+
+.pg3L1,
+.pg3L3 {
     top: 8%;
     left: 13.5%;
-    
+
 }
-.pg3L2{
+
+.pg3L2 {
     top: 8%;
     left: 12.8%;
-    
+
 }
-.pg3L4{
+
+.pg3L4 {
     top: 7%;
     left: 13%;
-    
+
 }
-.pg3L5{
+
+.pg3L5 {
     top: 7%;
     left: 13.5%;
-    
+
 }
-.pg3L6{
+
+.pg3L6 {
     top: 8%;
     left: 12.5%;
-    
+
 }
-.pg5L1{
+
+.pg5L1 {
     top: 10%;
     left: 13%;
-    
+
 }
-.pg5L2, .pg5L3{
+
+.pg5L2,
+.pg5L3 {
     top: 8%;
     left: 12.5%;
-    
+
 }
-.pg7L1{
+
+.pg7L1 {
     top: 9%;
     left: 12.5%;
-    
+
 }
-.pg9L1{
+
+.pg9L1 {
     top: 9%;
     left: 12.5%;
-    
+
 }
-.pg9L2{
+
+.pg9L2 {
     top: 9%;
     left: 12.5%;
-    
+
 }
-.pg9L3{
+
+.pg9L3 {
     top: 10%;
     left: 12.5%;
-    
+
 }
 
 
-.carousel-cont{
+.carousel-cont {
     position: relative;
     top: -60px;
     width: 80%;
     min-width: 90vw;
     min-height: 90vh;
-    overflow:hidden;
+    overflow: hidden;
     margin: 60px auto;
 }
 
-#carousel{
+#carousel {
     position: relative;
     width: 40%;
     /* height: 150%; */
@@ -195,7 +235,7 @@ body{
     transition: opacity 0.5s ease-in-out;
 }
 
-#carousel2{
+#carousel2 {
     position: relative;
     left: 9.4%;
     width: 40%;
@@ -205,12 +245,12 @@ body{
     transition: opacity 0.5s ease-in-out;
 }
 
-.arrow{
+.arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2.5rem;
-    color:#2F0000;
+    color: #2F0000;
     background: none;
     border: none;
     padding: 10px;
@@ -218,18 +258,20 @@ body{
     z-index: 10;
     transition: 0.3s;
 }
-#ar2{
+
+#ar2 {
     opacity: 0;
 }
 
-.arrow:hover{
+.arrow:hover {
     font-size: 2.7rem;
 }
-.arrow-right{
+
+.arrow-right {
     right: 20px;
 }
 
-.dropdown{
+.dropdown {
     position: absolute;
     width: 20%;
     top: 30px;
@@ -243,7 +285,7 @@ body{
     font-style: normal;
 }
 
-.dropdown select{
+.dropdown select {
 
     appearance: none;
     width: 30%;
@@ -262,7 +304,7 @@ body{
 }
 
 .btn {
-    position:relative;
+    position: relative;
     top: 5px;
     scale: 1.3;
     left: 36%;
@@ -271,14 +313,17 @@ body{
     background: none;
     transition: 0.2ms;
 }
-.toggleDark{
+
+.toggleDark {
     background-color: rgb(32, 32, 32);
 
-    .arrow{
+    .arrow {
         color: white;
     }
 
-    #logoimg, .btn, .dropdown{
+    #logoimg,
+    .btn,
+    .dropdown {
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
     }
 }

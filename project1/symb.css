@@ -8,6 +8,7 @@ body{
     margin: 0;
     font-family: "Kosugi Maru", sans-serif;
     color: #2F0000;
+    transition: 0.2s;
 }
 #logoimg{
     position: relative;
@@ -212,4 +213,26 @@ body{
     font-weight: 400;
     font-style: normal
     
+}
+
+.btn {
+    position:relative;
+    top: 5px;
+    scale: 1.3;
+    left: 36%;
+    z-index: 1000;
+    border: none;
+    background: none;
+    transition: 0.2ms;
+}
+.toggleDark{
+    background-color: rgb(32, 32, 32);
+
+    .arrow{
+        color: white;
+    }
+
+    #logoimg, .btn, .dropdown{
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+    }
 }
