@@ -278,6 +278,10 @@ body{
         top: 7.5%;
     }
 
+    .pg7L2{
+        top: 5%;
+    }
+
 
 }
 
@@ -288,6 +292,11 @@ body{
         top: 7%;
         right: 13%;
         /* opacity: 100%; */
+    }
+
+    .txtl{
+        top: 5%;
+        left: 12.8%;
     }
     .pg5L3{
         right: 12.5%;
@@ -304,6 +313,16 @@ body{
     .pg6R3{
         right: 12.5%;
         top: 5%; 
+    }
+    .pg7L2{
+        top: 4%;
+    }
+
+    .pg13L2{
+        top: 8.5%;
+    }
+    .pg13L3{
+        top: 7.5%;
     }
 
     .pg14R1{
