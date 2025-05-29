@@ -64,7 +64,7 @@ body{
 }
 .pg6R3{
     right: 12.5%;
-    top: 8%; 
+    top: 7%; 
 }
 .pg6R4{
     right: 12.5%;
@@ -267,6 +267,9 @@ body{
 
 
 @media (max-width: 1920px){
+    .pg4R2{
+        right: 12%;
+    }
     .pg6R3{
         right: 12.5%;
         top: 7%; 
@@ -318,18 +321,25 @@ body{
         top: 4%;
     }
 
+    .pg13L1{
+        top: 8.5%;
+    }
     .pg13L2{
         top: 8.5%;
     }
     .pg13L3{
-        top: 7.5%;
+        top: 6.5%;
     }
 
     .pg14R1{
         top: 6%;
     }
     .pg14R2{
-        top: 6%;
+        top: 5%;
+    }
+
+    .pg15L1{
+        top: 7.5%;
     }
 
     .dropdown{

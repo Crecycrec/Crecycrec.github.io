@@ -327,3 +327,39 @@ body {
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
     }
 }
+
+
+@media (max-width:1920px){
+    .shoaltitle {
+        top: 8%;
+    }
+}
+
+@media (max-width:1440px){
+    .shoaltitle {
+        top: 7%;
+    }
+
+    .pg2R1{
+        top: 7%;
+    }
+    .pg2R2{
+        top: 7%;
+    }
+
+    .pg3L1, .pg3L2, .pg3L3, .pg3L4, .pg3L5, .pg3L6{
+        top: 6.5%;
+    }
+
+    .pg4R1, .pg4R2, .pg4R3{
+        top: 7.5%;
+    }
+
+    .pg6R1, .pg6R2, .pg6R3, .pg6R4{
+        top: 5.5%;
+    }
+
+    .pg9L1, .pg9L2, .pg9L3{
+        top: 6.5%;
+    }
+}
