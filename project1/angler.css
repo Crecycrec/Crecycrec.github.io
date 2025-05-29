@@ -157,3 +157,19 @@ body {
         filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
     }
 }
+
+@media (max-width:1920px){
+    .pg2L1, .pg1R1{
+        top: 9%;
+    }
+}
+
+@media (max-width:1440px){
+    .anglerTitle {
+        top: 7.5%;
+    }
+
+    .pg2L1, .pg1R1{
+        top: 6.7%;
+    }
+}
