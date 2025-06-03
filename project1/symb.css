@@ -20,7 +20,7 @@ body{
 
 #words, #words2, #words3, #words4, #words5, #words6, #words7, #words8, #words9, #words10, #words11, #words12, #words13, #words14, #words15, #words16{
     position: absolute;
-    width: 36.5%;
+    width: 36%;
     object-fit: cover;
     
     z-index: 200;
@@ -107,7 +107,7 @@ body{
 }
 .pg1R2{
     right: 12%;
-    top: 10%; 
+    top: 8%; 
 }
 .pg2L1{
     left: 13%;
